@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <layer-list>
+                    <item android:id="@android:id/mask">
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/maya_radius_16dp"/>
+                            <solid android:color="?attr/mayaContentViewBackgroundColor"/>
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/maya_radius_16dp"/>
+                            <stroke
+                                android:width="@dimen/maya_stroke_width_small"
+                                android:color="?attr/mayaContentViewBorderColor"/>
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+            <item>
+                <layer-list>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/maya_radius_16dp"/>
+                            <solid android:color="?attr/mayaContentViewBackgroundColor"/>
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/maya_radius_16dp"/>
+                            <stroke
+                                android:width="@dimen/maya_stroke_width_small"
+                                android:color="?attr/mayaContentViewBorderColor"/>
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+        </selector>
+    </item>
+</ripple>

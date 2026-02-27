@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:fromDegrees="90">
+            <shape android:shape="line">
+                <stroke
+                    android:width="@dimen/pma_stroke_width_normal"
+                    android:color="@android:color/transparent"
+                    android:dashWidth="@dimen/pma_stroke_dash_width_8dp"
+                    android:dashGap="@dimen/pma_stroke_dash_gap_8dp"/>
+            </shape>
+        </rotate>
+    </item>
+</selector>

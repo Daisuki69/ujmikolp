@@ -1,0 +1,119 @@
+package com.google.android.gms.internal.mlkit_vision_face_bundled;
+
+import androidx.camera.core.impl.a;
+import java.util.AbstractList;
+import java.util.Arrays;
+import java.util.RandomAccess;
+
+/* JADX INFO: loaded from: classes3.dex */
+final class zzwf extends zzth implements RandomAccess {
+    private static final zzwf zza = new zzwf(new Object[0], 0, false);
+    private Object[] zzb;
+    private int zzc;
+
+    public zzwf() {
+        this(new Object[10], 0, true);
+    }
+
+    public static zzwf zze() {
+        return zza;
+    }
+
+    private final String zzf(int i) {
+        return a.c(i, this.zzc, "Index:", ", Size:");
+    }
+
+    private final void zzg(int i) {
+        if (i < 0 || i >= this.zzc) {
+            throw new IndexOutOfBoundsException(zzf(i));
+        }
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zzth, java.util.AbstractList, java.util.List
+    public final void add(int i, Object obj) {
+        int i4;
+        zza();
+        if (i < 0 || i > (i4 = this.zzc)) {
+            throw new IndexOutOfBoundsException(zzf(i));
+        }
+        int i6 = i + 1;
+        Object[] objArr = this.zzb;
+        if (i4 < objArr.length) {
+            System.arraycopy(objArr, i, objArr, i6, i4 - i);
+        } else {
+            Object[] objArr2 = new Object[a.a(i4, 3, 2, 1)];
+            System.arraycopy(objArr, 0, objArr2, 0, i);
+            System.arraycopy(this.zzb, i, objArr2, i6, this.zzc - i);
+            this.zzb = objArr2;
+        }
+        this.zzb[i] = obj;
+        this.zzc++;
+        ((AbstractList) this).modCount++;
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final Object get(int i) {
+        zzg(i);
+        return this.zzb[i];
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zzth, java.util.AbstractList, java.util.List
+    public final Object remove(int i) {
+        zza();
+        zzg(i);
+        Object[] objArr = this.zzb;
+        Object obj = objArr[i];
+        if (i < this.zzc - 1) {
+            System.arraycopy(objArr, i + 1, objArr, i, (r2 - i) - 1);
+        }
+        this.zzc--;
+        ((AbstractList) this).modCount++;
+        return obj;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zzth, java.util.AbstractList, java.util.List
+    public final Object set(int i, Object obj) {
+        zza();
+        zzg(i);
+        Object[] objArr = this.zzb;
+        Object obj2 = objArr[i];
+        objArr[i] = obj;
+        ((AbstractList) this).modCount++;
+        return obj2;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zzvb
+    public final /* bridge */ /* synthetic */ zzvb zzd(int i) {
+        if (i >= this.zzc) {
+            return new zzwf(Arrays.copyOf(this.zzb, i), this.zzc, true);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    private zzwf(Object[] objArr, int i, boolean z4) {
+        super(z4);
+        this.zzb = objArr;
+        this.zzc = i;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zzth, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean add(Object obj) {
+        zza();
+        int i = this.zzc;
+        Object[] objArr = this.zzb;
+        if (i == objArr.length) {
+            this.zzb = Arrays.copyOf(objArr, ((i * 3) / 2) + 1);
+        }
+        Object[] objArr2 = this.zzb;
+        int i4 = this.zzc;
+        this.zzc = i4 + 1;
+        objArr2[i4] = obj;
+        ((AbstractList) this).modCount++;
+        return true;
+    }
+}

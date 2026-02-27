@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deals_and_promos_container_frame"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maya_shop_deals_promos_height"
+    android:layout_marginLeft="@dimen/maya_margin_large"
+    android:layout_marginRight="@dimen/maya_margin_large"
+    android:layout_marginHorizontal="@dimen/maya_margin_large">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_view_shimmer_rounded"/>
+</dOYHB6.lN8Dz0.yf3D09>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/maya_bg_tab_item_dashboard_selected"/>
+    <item
+        android:drawable="@drawable/maya_bg_tab_item_dashboard_selected"
+        android:state_activated="true"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/maya_bg_tab_item_dashboard_default"/>
+    <item
+        android:drawable="@drawable/maya_bg_tab_item_dashboard_default"
+        android:state_activated="false"/>
+</selector>

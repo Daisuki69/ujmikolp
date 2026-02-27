@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="?attr/mayaShopHistoryIcon"
+        android:id="@+id/maya_menu_shop_purchase_history_icon"
+        android:title="@string/pma_menu_label_purchase_history"
+        app:showAsAction="always"/>
+</menu>

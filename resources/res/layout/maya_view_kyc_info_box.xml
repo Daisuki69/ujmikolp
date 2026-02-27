@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/image_view_information_text_icon"
+        android:layout_width="@dimen/maya_icon_size_length_small"
+        android:layout_height="@dimen/maya_icon_size_length_small"
+        android:src="@drawable/maya_ic_information"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="@dimen/maya_margin_small"/>
+    <com.paymaya.mayaui.common.view.widget.MultiColorTextView
+        android:id="@+id/text_view_information_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mctvSecondaryTextColor="?attr/mayaColorAccent"
+        style="@style/CerebriMediumSmallText.Tertiary"/>
+</merge>

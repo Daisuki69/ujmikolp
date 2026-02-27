@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/maya_shades_of_grey_2"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/maya_ic_bank_grey"
+        android:left="@dimen/pma_padding_10dp"
+        android:top="@dimen/pma_padding_10dp"
+        android:right="@dimen/pma_padding_10dp"
+        android:bottom="@dimen/pma_padding_10dp"/>
+</layer-list>

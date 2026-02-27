@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                    <solid android:color="@color/transparent"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                    <solid android:color="@color/transparent"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                    <solid android:color="@color/maya_focus_light_black"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                    <solid android:color="@color/transparent"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

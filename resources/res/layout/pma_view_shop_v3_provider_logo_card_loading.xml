@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_card_view_pma_shop_view_v3_provider_logo_card_loading"
+    android:layout_width="@dimen/pma_shop_provider_logo_card_width"
+    android:layout_height="@dimen/pma_shop_provider_logo_card_height"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/pma_padding_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/pma_padding_medium">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_icon_lottie_view_pma_view_shop_v3_provider_logo_card_loading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/pma_loading_shimmer"
+            app:lottie_scale="1"
+            app:srcCompat="@drawable/pma_background_shimmer_paymaya_placeholder"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="266dp"
+        android:width="266dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/maya_shades_of_grey_1"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/maya_ic_instapay_logo"
+        android:left="@dimen/maya_padding_20dp"
+        android:top="@dimen/maya_padding_20dp"
+        android:right="@dimen/maya_padding_20dp"
+        android:bottom="@dimen/maya_padding_20dp"/>
+</layer-list>

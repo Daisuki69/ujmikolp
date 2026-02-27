@@ -1,0 +1,233 @@
+{
+    "questions":[
+        {
+            "question":"What is your estimated net worth?",
+            "answers":[
+                {
+                    "answer":"Less than ₱1 million"
+                },
+                {
+                    "answer":"Around ₱1-10 million"
+                },
+                {
+                    "answer":"Around ₱10-20 million"
+                },
+                {
+                    "answer":"Above ₱20 million"
+                }
+            ]
+        },
+        {
+            "question":"What are your sources of income?",
+            "answers":[
+                {
+                    "answer":"Income",
+                    "subtitle":"(e.g. dividends, salary, business income)"
+                },
+                {
+                    "answer":"Savings/Investments"
+                },
+                {
+                    "answer":"Remittance/Allowances"
+                },
+                {
+                    "answer":"Pension"
+                },
+                {
+                    "answer":"Inheritance"
+                },
+                {
+                    "answer":"Others"
+                }
+            ]
+        },
+        {
+            "question":"What are you investing for?",
+            "answers":[
+                {
+                    "answer":"To safeguard my wealth"
+                },
+                {
+                    "answer":"To have a regular source of income"
+                },
+                {
+                    "answer":"To build wealth over time"
+                }
+            ]
+        },
+        {
+            "question":"How much do you see yourself investing?",
+            "answers":[
+                {
+                    "answer":"₱1,000 or less"
+                },
+                {
+                    "answer":"₱1,001 - ₱50,000"
+                },
+                {
+                    "answer":"₱50,001 - ₱100,000"
+                },
+                {
+                    "answer":"₱100,001 - ₱500,000"
+                },
+                {
+                    "answer":"₱500,001 - ₱1 million"
+                },
+                {
+                    "answer":"More than ₱1 million"
+                }
+            ]
+        },
+        {
+            "question":"How frequently do you see yourself investing?",
+            "answers":[
+                {
+                    "answer":"Only when I have available cash"
+                },
+                {
+                    "answer":"Quarterly"
+                },
+                {
+                    "answer":"Monthly"
+                },
+                {
+                    "answer":"Weekly"
+                },
+                {
+                    "answer":"More than once a week"
+                }
+            ]
+        },
+        {
+            "question":"How long do you see yourself investing?",
+            "answers":[
+                {
+                    "answer":"Up to 2 years"
+                },
+                {
+                    "answer":"3-5 years"
+                },
+                {
+                    "answer":"5-7 years"
+                },
+                {
+                    "answer":"Longer than 7 years"
+                }
+            ]
+        },
+        {
+            "question":"How much loss are  you willing to accept when investing?",
+            "answers":[
+                {
+                    "answer":"No loss"
+                },
+                {
+                    "answer":"Up to 10%"
+                },
+                {
+                    "answer":"Up to 15%"
+                },
+                {
+                    "answer":"More than 15%"
+                }
+            ]
+        },
+        {
+            "question":"How much risk are  you willing to accept when investing?",
+            "answers":[
+                {
+                    "answer":"Low to no risk for general stability of my money"
+                },
+                {
+                    "answer":"Moderate risk in return for some growth opportunity"
+                },
+                {
+                    "answer":"High risk for potentially high return"
+                }
+            ]
+        },
+        {
+            "question":"How much do you know about investing?",
+            "answers":[
+                {
+                    "answer":"I am a new or novice investor"
+                },
+                {
+                    "answer":"I have some knowledge about investing"
+                },
+                {
+                    "answer":"I am generally knowledgeable about investing"
+                },
+                {
+                    "answer":"I am very knowledgeable about investing"
+                }
+            ]
+        },
+        {
+            "question":"Have you invested in any of the following?",
+            "subtitle":"Select up to 3 investment products",
+            "answers":[
+                {
+                    "answer":"Cash and deposits products",
+                    "subtitle":"(Time deposit, SD)"
+                },
+                {
+                    "answer":"Government securities or corporate fixed income securities",
+                    "subtitle":"(T-bills, Retail Treasury Bonds, Corporate Bonds, Commercial Papers)"
+                },
+                {
+                    "answer":"Stocks"
+                },
+                {
+                    "answer":"Mutual funds or UITFs"
+                },
+                {
+                    "answer":"Insurance products",
+                    "subtitle":"(including variable unit linked products and pre-need)"
+                },
+                {
+                    "answer":"Offshore funds)",
+                    "subtitle":"(including ETFs, REITs)"
+                },
+                {
+                    "answer":"Structured financial products"
+                },
+                {
+                    "answer":"Commodities"
+                },
+                {
+                    "answer":"Real estate"
+                }
+            ]
+        },
+        {
+            "question":"Will you withdraw from your investment often?",
+            "answers":[
+                {
+                    "answer":"Yes, I will be regularly withdrawing from my investment"
+                },
+                {
+                    "answer":"No, I have other sources of income"
+                }
+            ]
+        },
+        {
+            "question":"What is your annual gross income?",
+            "answers":[
+                {
+                    "answer":"Less than ₱250,000"
+                },
+                {
+                    "answer":"₱250,000 - ₱500,000"
+                },
+                {
+                    "answer":"₱500,000 - ₱1 million"
+                },
+                {
+                    "answer":"More than ₱1 million"
+                }
+            ]
+        }
+     
+    ]
+}

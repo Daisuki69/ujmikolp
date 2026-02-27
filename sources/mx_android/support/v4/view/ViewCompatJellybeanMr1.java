@@ -1,0 +1,46 @@
+package mx_android.support.v4.view;
+
+import android.graphics.Paint;
+import android.view.View;
+
+/* JADX INFO: loaded from: classes7.dex */
+class ViewCompatJellybeanMr1 {
+    ViewCompatJellybeanMr1() {
+    }
+
+    public static int getLabelFor(View view) {
+        return view.getLabelFor();
+    }
+
+    public static void setLabelFor(View view, int i) {
+        view.setLabelFor(i);
+    }
+
+    public static void setLayerPaint(View view, Paint paint) {
+        view.setLayerPaint(paint);
+    }
+
+    public static int getLayoutDirection(View view) {
+        return view.getLayoutDirection();
+    }
+
+    public static void setLayoutDirection(View view, int i) {
+        view.setLayoutDirection(i);
+    }
+
+    public static int getPaddingStart(View view) {
+        return view.getPaddingStart();
+    }
+
+    public static int getPaddingEnd(View view) {
+        return view.getPaddingEnd();
+    }
+
+    public static void setPaddingRelative(View view, int i, int i4, int i6, int i10) {
+        view.setPaddingRelative(i, i4, i6, i10);
+    }
+
+    public static int getWindowSystemUiVisibility(View view) {
+        return view.getWindowSystemUiVisibility();
+    }
+}

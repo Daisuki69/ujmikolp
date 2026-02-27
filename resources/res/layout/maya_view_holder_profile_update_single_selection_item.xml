@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_background_card_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/maya_kyc_single_selection_card_min_height">
+    <TextView
+        android:id="@+id/text_view_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:layout_marginStart="@dimen/maya_margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_checkmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoSemiBoldTextBody.Primary"/>
+    <ImageView
+        android:id="@+id/image_view_checkmark"
+        android:visibility="invisible"
+        android:layout_width="@dimen/maya_kyc_accepted_id_view_holder_checkmark_icon_size"
+        android:layout_height="@dimen/maya_kyc_accepted_id_view_holder_checkmark_icon_size"
+        android:layout_marginTop="@dimen/maya_margin_medium"
+        android:layout_marginBottom="@dimen/maya_margin_medium"
+        android:src="@drawable/maya_ic_check_green"
+        android:contentDescription="@string/maya_label_check_deals"
+        android:layout_marginEnd="@dimen/maya_margin_normal"
+        android:layout_marginVertical="@dimen/maya_margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

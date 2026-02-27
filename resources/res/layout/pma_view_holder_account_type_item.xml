@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/pma_text_size_body"
+    android:textColor="@color/pma_text_color_dark_grey"
+    android:id="@+id/text_view_pma_view_holder_account_type_item"
+    android:background="@drawable/pma_background_white_thin_bottom_border"
+    android:padding="@dimen/pma_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:fontFamily="@font/roboto"/>

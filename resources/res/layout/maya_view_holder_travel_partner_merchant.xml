@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_travel_partner"
+    android:background="@drawable/maya_bg_content_border_card_light"
+    android:clickable="true"
+    android:layout_width="@dimen/maya_travel_partner_merchant_width"
+    android:layout_height="@dimen/maya_travel_partner_merchant_height">
+    <ImageView
+        android:id="@+id/image_view_travel_partner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/maya_margin_normal"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:layout_marginRight="@dimen/maya_margin_normal"
+        android:layout_marginBottom="@dimen/maya_margin_large"
+        android:scaleType="fitCenter"
+        android:layout_marginHorizontal="@dimen/maya_margin_normal"
+        android:layout_marginVertical="@dimen/maya_margin_large"/>
+    <ImageView
+        android:id="@+id/image_view_default_travel_partner"
+        android:visibility="gone"
+        android:layout_width="@dimen/maya_travel_partner_merchant_default_size"
+        android:layout_height="@dimen/maya_travel_partner_merchant_default_size"
+        android:layout_marginLeft="@dimen/maya_margin_large"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:layout_marginRight="@dimen/maya_margin_large"
+        android:layout_marginBottom="@dimen/maya_margin_large"
+        android:src="@drawable/maya_ic_service_merchants"
+        android:layout_marginHorizontal="@dimen/maya_margin_large"
+        android:layout_marginVertical="@dimen/maya_margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/mayaColorContentLinksAccent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

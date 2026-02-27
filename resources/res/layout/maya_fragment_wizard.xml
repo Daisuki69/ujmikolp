@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_contents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear_layout_dot_indicators"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.85"/>
+    <dOYHB6.lN8Dz0.d8NVX3
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_dot_indicators"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/maya_wizard_dots_indicator_dot_size"
+        android:layout_marginLeft="@dimen/maya_margin_normal"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:layout_marginRight="@dimen/maya_margin_normal"
+        android:layout_marginHorizontal="@dimen/maya_margin_normal"
+        app:layout_constraintBottom_toTopOf="@+id/space_bottom_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager_contents"/>
+    <View
+        android:id="@+id/space_bottom_gap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="@dimen/maya_margin_normal"
+        app:layout_constraintBottom_toTopOf="@+id/button_get_started"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_dot_indicators"
+        app:layout_constraintVertical_weight="0.08"/>
+    <Button
+        android:id="@+id/button_get_started"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/maya_margin_large"
+        android:layout_marginRight="@dimen/maya_margin_large"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_button_get_started"
+        android:layout_marginHorizontal="@dimen/maya_margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/MayaButtonPrimaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

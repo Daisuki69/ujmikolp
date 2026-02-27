@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xp_loading_constraint_layout"
+    android:background="@drawable/maya_xp_card_loading_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maya_widget_height_290dp">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:id="@+id/xp_loading_animation_view"
+        android:layout_width="@dimen/maya_widget_width_160dp"
+        android:layout_height="@dimen/maya_widget_height_160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/maya_pulse_animation"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

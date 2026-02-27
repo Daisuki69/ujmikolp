@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/maya_kyc_benefits_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/maya_kyc_complete_your_maya_experience_benefits_view_holder_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <dOYHB6.lN8Dz0.d8NVX3
+        android:orientation="horizontal"
+        android:id="@+id/maya_kyc_expand_linear_layout"
+        android:padding="@dimen/maya_padding_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maya_kyc_benefits_recycler_view">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/maya_kyc_chevron_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maya_kyc_complete_your_maya_experience_expand_benefits"
+            android:layout_marginEnd="@dimen/maya_margin_extra_small"
+            style="@style/JekoBoldLongRead.Accent"/>
+        <ImageView
+            android:id="@+id/maya_kyc_chevron_image_view"
+            android:layout_width="@dimen/maya_kyc_complete_your_maya_experience_benefits_chevron_icon_size"
+            android:layout_height="@dimen/maya_kyc_complete_your_maya_experience_benefits_chevron_icon_size"
+            android:src="@drawable/maya_ic_chevron_down_green"
+            android:scaleType="fitCenter"
+            android:importantForAccessibility="no"/>
+    </dOYHB6.lN8Dz0.d8NVX3>
+</merge>

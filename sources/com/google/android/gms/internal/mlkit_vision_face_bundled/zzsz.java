@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.mlkit_vision_face_bundled;
+
+import android.os.IBinder;
+import android.os.RemoteException;
+import com.google.android.gms.dynamic.IObjectWrapper;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzsz extends zza implements zztb {
+    public zzsz(IBinder iBinder) {
+        super(iBinder, "com.google.mlkit.vision.face.aidls.IFaceDetectorCreator");
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_face_bundled.zztb
+    public final zzsy newFaceDetector(IObjectWrapper iObjectWrapper, zzst zzstVar) throws RemoteException {
+        throw null;
+    }
+}

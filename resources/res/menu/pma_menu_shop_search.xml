@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pma_menu_shop_search_field"
+        android:title="@string/pma_menu_search"
+        app:actionLayout="@layout/pma_view_search_view"
+        app:showAsAction="collapseActionView"/>
+</menu>

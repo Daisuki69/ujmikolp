@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/maya_margin_small"
+        android:top="@dimen/maya_margin_small"
+        android:right="@dimen/maya_margin_small"
+        android:bottom="@dimen/maya_margin_small">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/mayaSnackbarErrorBackgroundColor"/>
+            <stroke
+                android:width="@dimen/maya_stroke_width_small"
+                android:color="?attr/mayaSnackbarErrorBorderColor"/>
+            <padding
+                android:left="@dimen/maya_margin_normal"
+                android:top="@dimen/maya_margin_normal"
+                android:right="@dimen/maya_margin_normal"
+                android:bottom="@dimen/maya_margin_normal"/>
+            <corners android:radius="@dimen/maya_radius_16dp"/>
+        </shape>
+    </item>
+</layer-list>

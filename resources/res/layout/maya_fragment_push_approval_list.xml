@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/layout_list_loading_and_content"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_layout_push_approval_list_button_content"/>
+    <include
+        android:id="@+id/layout_list_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/maya_margin_2x_large"
+        android:layout_marginRight="@dimen/maya_margin_2x_large"
+        android:layout_marginBottom="@dimen/maya_margin_2x_large"
+        android:layout_marginHorizontal="@dimen/maya_margin_2x_large"
+        layout="@layout/maya_layout_push_approval_list_error"/>
+</dOYHB6.lN8Dz0.yf3D09>

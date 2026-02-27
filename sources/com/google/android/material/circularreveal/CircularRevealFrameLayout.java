@@ -1,0 +1,109 @@
+package com.google.android.material.circularreveal;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.widget.FrameLayout;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.circularreveal.CircularRevealWidget;
+import dOYHB6.aztWy0.eTp7v2;
+import dOYHB6.aztWy0.hxOD26;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class CircularRevealFrameLayout extends FrameLayout implements CircularRevealWidget {
+
+    @NonNull
+    private final CircularRevealHelper helper;
+
+    public CircularRevealFrameLayout(@NonNull Context context) {
+        this(context, null);
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealHelper.Delegate
+    public void actualDraw(Canvas canvas) {
+        super.draw(canvas);
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealHelper.Delegate
+    public boolean actualIsOpaque() {
+        return super.isOpaque();
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public void buildCircularRevealCache() {
+        this.helper.buildCircularRevealCache();
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public void destroyCircularRevealCache() {
+        this.helper.destroyCircularRevealCache();
+    }
+
+    @Override // android.view.View, com.google.android.material.circularreveal.CircularRevealWidget
+    @SuppressLint({"MissingSuperCall"})
+    public void draw(@NonNull Canvas canvas) {
+        CircularRevealHelper circularRevealHelper = this.helper;
+        if (circularRevealHelper != null) {
+            circularRevealHelper.draw(canvas);
+        } else {
+            super.draw(canvas);
+        }
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    @Nullable
+    public Drawable getCircularRevealOverlayDrawable() {
+        return this.helper.getCircularRevealOverlayDrawable();
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public int getCircularRevealScrimColor() {
+        return this.helper.getCircularRevealScrimColor();
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    @Nullable
+    public CircularRevealWidget.RevealInfo getRevealInfo() {
+        return this.helper.getRevealInfo();
+    }
+
+    @Override // android.view.View, com.google.android.material.circularreveal.CircularRevealWidget
+    public boolean isOpaque() {
+        CircularRevealHelper circularRevealHelper = this.helper;
+        return circularRevealHelper != null ? circularRevealHelper.isOpaque() : super.isOpaque();
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // android.view.ViewGroup
+    public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
+        Context context = getContext();
+        hxOD26.getInstance().gSVOV1(new eTp7v2(motionEvent, context instanceof Activity ? (Activity) context : null));
+        return super.onInterceptTouchEvent(motionEvent);
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public void setCircularRevealOverlayDrawable(@Nullable Drawable drawable) {
+        this.helper.setCircularRevealOverlayDrawable(drawable);
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public void setCircularRevealScrimColor(@ColorInt int i) {
+        this.helper.setCircularRevealScrimColor(i);
+    }
+
+    @Override // com.google.android.material.circularreveal.CircularRevealWidget
+    public void setRevealInfo(@Nullable CircularRevealWidget.RevealInfo revealInfo) {
+        this.helper.setRevealInfo(revealInfo);
+    }
+
+    public CircularRevealFrameLayout(@NonNull Context context, @Nullable AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.helper = new CircularRevealHelper(this);
+    }
+}

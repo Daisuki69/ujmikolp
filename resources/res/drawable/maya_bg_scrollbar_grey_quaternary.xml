@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?attr/mayaColorContentQuaternary"/>
+    <corners android:radius="@dimen/pma_radius_5dp"/>
+    <size android:width="@dimen/maya_vertical_scrollbar_width_small"/>
+</shape>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/vouchers_collection_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pma_margin_large"
+        android:layout_marginRight="@dimen/pma_margin_large"
+        android:layout_marginHorizontal="@dimen/pma_margin_large"
+        style="@style/MayaSegmentsLayout"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vouchers_collection_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/pma_margin_normal"/>
+</dOYHB6.lN8Dz0.d8NVX3>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/billers_pay_with_maya_credit_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:ellipsize="end"
+        android:id="@+id/billers_pay_with_maya_credit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_pay_bills_with_maya_credit_banner_title"
+        android:drawablePadding="@dimen/maya_padding_small"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        style="@style/MayaPayBillsPayWithMayaCreditBanner"/>
+    <com.paymaya.mayaui.common.view.widget.MayaInputLayout
+        android:id="@+id/text_input_layout_billers_pay_with_maya_credit_entrypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_medium"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billers_pay_with_maya_credit_button"
+        app:milLabel="@string/maya_hint_initial_receipt_entrypoint_billspay_id"
+        style="@style/MayaInputLayoutDefault"/>
+    <Button
+        android:id="@+id/button_billers_pay_with_maya_credit_entrypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_continue"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_billers_pay_with_maya_credit_entrypoint"
+        style="@style/MayaButtonSecondaryMedium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

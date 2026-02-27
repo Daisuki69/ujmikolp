@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_view_warning_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_94"
+        android:src="0x7f080209"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_contacts_permission_title"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/maya_margin_48"
+        android:layout_marginEnd="@dimen/maya_margin_48"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_warning_icon"
+        style="@style/JekoBoldH5.Primary"/>
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_contacts_permission_send_money_description"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/maya_margin_48"
+        android:layout_marginEnd="@dimen/maya_margin_48"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        style="@style/CerebriBookLongRead.Secondary200"/>
+    <Button
+        android:id="@+id/button_allow_access"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:text="@string/maya_label_contacts_allow_access"
+        android:layout_marginStart="@dimen/maya_margin_48"
+        android:layout_marginEnd="@dimen/maya_margin_48"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_description"
+        style="@style/MayaButtonPrimaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

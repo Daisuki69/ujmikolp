@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_constraint_layout_pma_view_shop_v3_home_section_carousel"
+    android:paddingTop="@dimen/pma_padding_normal"
+    android:paddingBottom="@dimen/pma_padding_extra_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/section_name_text_view_pma_view_shop_v3_home_section_carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pma_margin_20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Body2DarkBold"/>
+    <TextView
+        android:id="@+id/view_all_text_view_pma_view_shop_v3_home_section_carousel"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/pma_margin_20dp"
+        android:text="@string/pma_label_view_all"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Body2PrimaryMedium"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/carousel_items_recycler_view_pma_view_shop_v3_home_section_carousel"
+        android:paddingBottom="@dimen/pma_padding_extra_small"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_medium"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/section_name_text_view_pma_view_shop_v3_home_section_carousel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

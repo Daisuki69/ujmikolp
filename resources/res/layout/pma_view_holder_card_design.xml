@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_pma_view_holder_card_design"
+    android:layout_width="@dimen/pma_card_design_size"
+    android:layout_height="@dimen/pma_card_design_size"
+    app:cardCornerRadius="@dimen/pma_radius_5dp"
+    app:cardElevation="0dp">
+    <ImageView
+        android:id="@+id/image_view_pma_view_holder_card_design"
+        android:background="@drawable/pma_ic_no_card_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="@+id/border_view_pma_view_holder_card_design"
+        android:background="@drawable/pma_background_selected_card_design_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.cardview.widget.CardView>

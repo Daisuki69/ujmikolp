@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xsi="http://schemas.android.com/aapt" xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/maya_opacity_purple_25"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/maya_ic_favorite_service_profile_light"
+        android:left="@dimen/maya_padding_10"
+        android:top="@dimen/maya_padding_10"
+        android:right="@dimen/maya_padding_10"
+        android:bottom="@dimen/maya_padding_10"/>
+</layer-list>

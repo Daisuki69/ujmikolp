@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_bg_color_opacity_secondary_green_rounded"
+    android:padding="@dimen/maya_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_load_v2_new_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maya_ic_new_tag_grown_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/text_view_load_v2_banner_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/maya_margin_small"
+        android:text="@string/maya_label_shop_load_v2_banner_title"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_load_v2_chevron_right"
+        app:layout_constraintStart_toEndOf="@+id/image_view_load_v2_new_tag"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoSemiBoldLink.Primary"/>
+    <TextView
+        android:id="@+id/text_view_load_v2_banner_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_shop_load_v2_banner_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/text_view_load_v2_banner_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_load_v2_banner_title"
+        style="@style/JekoRegularSmallText.Primary"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_load_v2_chevron_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maya_ic_chevron_right_primary_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

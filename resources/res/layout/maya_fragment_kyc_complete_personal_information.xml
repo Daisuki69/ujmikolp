@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/layout_loading"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_fragment_kyc_data_loading"/>
+    <include
+        android:id="@+id/layout_form"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_fragment_kyc_complete_personal_information_form"/>
+</dOYHB6.lN8Dz0.yf3D09>

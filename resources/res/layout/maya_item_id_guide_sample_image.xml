@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/maya_margin_small">
+    <com.paymaya.common.widget.HtmlTextView
+        android:textColor="@color/davy_gray"
+        android:id="@+id/text_view_instruction"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        style="@style/CerebriBookLink"/>
+    <ImageView
+        android:id="@+id/image_sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+</dOYHB6.lN8Dz0.d8NVX3>

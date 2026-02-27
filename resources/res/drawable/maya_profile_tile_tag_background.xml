@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/maya_profile_tile_tag_radius"/>
+    <gradient
+        android:startColor="@color/amber_orange"
+        android:endColor="@color/magenta"
+        android:angle="315"
+        android:type="linear"/>
+</shape>

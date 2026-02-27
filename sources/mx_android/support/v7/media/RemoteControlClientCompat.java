@@ -1,0 +1,113 @@
+package mx_android.support.v7.media;
+
+import android.content.Context;
+import android.os.Build;
+import java.lang.ref.WeakReference;
+import mx_android.support.v7.media.MediaRouterJellybean;
+
+/* JADX INFO: loaded from: classes7.dex */
+abstract class RemoteControlClientCompat {
+    protected final Context mContext;
+    protected final Object mRcc;
+    protected VolumeCallback mVolumeCallback;
+
+    public static final class PlaybackInfo {
+        public int volume;
+        public int volumeMax;
+        public int volumeHandling = 0;
+        public int playbackStream = 3;
+        public int playbackType = 1;
+    }
+
+    public interface VolumeCallback {
+        void onVolumeSetRequest(int i);
+
+        void onVolumeUpdateRequest(int i);
+    }
+
+    public void setPlaybackInfo(PlaybackInfo playbackInfo) {
+    }
+
+    protected RemoteControlClientCompat(Context context, Object obj) {
+        this.mContext = context;
+        this.mRcc = obj;
+    }
+
+    public static RemoteControlClientCompat obtain(Context context, Object obj) {
+        if (Build.VERSION.SDK_INT >= 16) {
+            return new JellybeanImpl(context, obj);
+        }
+        return new LegacyImpl(context, obj);
+    }
+
+    public Object getRemoteControlClient() {
+        return this.mRcc;
+    }
+
+    public void setVolumeCallback(VolumeCallback volumeCallback) {
+        this.mVolumeCallback = volumeCallback;
+    }
+
+    static class LegacyImpl extends RemoteControlClientCompat {
+        public LegacyImpl(Context context, Object obj) {
+            super(context, obj);
+        }
+    }
+
+    static class JellybeanImpl extends RemoteControlClientCompat {
+        private boolean mRegistered;
+        private final Object mRouterObj;
+        private final Object mUserRouteCategoryObj;
+        private final Object mUserRouteObj;
+
+        public JellybeanImpl(Context context, Object obj) {
+            super(context, obj);
+            Object mediaRouter = MediaRouterJellybean.getMediaRouter(context);
+            this.mRouterObj = mediaRouter;
+            Object objCreateRouteCategory = MediaRouterJellybean.createRouteCategory(mediaRouter, "", false);
+            this.mUserRouteCategoryObj = objCreateRouteCategory;
+            this.mUserRouteObj = MediaRouterJellybean.createUserRoute(mediaRouter, objCreateRouteCategory);
+        }
+
+        @Override // mx_android.support.v7.media.RemoteControlClientCompat
+        public void setPlaybackInfo(PlaybackInfo playbackInfo) {
+            MediaRouterJellybean.UserRouteInfo.setVolume(this.mUserRouteObj, playbackInfo.volume);
+            MediaRouterJellybean.UserRouteInfo.setVolumeMax(this.mUserRouteObj, playbackInfo.volumeMax);
+            MediaRouterJellybean.UserRouteInfo.setVolumeHandling(this.mUserRouteObj, playbackInfo.volumeHandling);
+            MediaRouterJellybean.UserRouteInfo.setPlaybackStream(this.mUserRouteObj, playbackInfo.playbackStream);
+            MediaRouterJellybean.UserRouteInfo.setPlaybackType(this.mUserRouteObj, playbackInfo.playbackType);
+            if (this.mRegistered) {
+                return;
+            }
+            this.mRegistered = true;
+            MediaRouterJellybean.UserRouteInfo.setVolumeCallback(this.mUserRouteObj, MediaRouterJellybean.createVolumeCallback(new VolumeCallbackWrapper(this)));
+            MediaRouterJellybean.UserRouteInfo.setRemoteControlClient(this.mUserRouteObj, this.mRcc);
+        }
+
+        private static final class VolumeCallbackWrapper implements MediaRouterJellybean.VolumeCallback {
+            private final WeakReference<JellybeanImpl> mImplWeak;
+
+            public VolumeCallbackWrapper(JellybeanImpl jellybeanImpl) {
+                this.mImplWeak = new WeakReference<>(jellybeanImpl);
+            }
+
+            @Override // mx_android.support.v7.media.MediaRouterJellybean.VolumeCallback
+            public void onVolumeUpdateRequest(Object obj, int i) {
+                JellybeanImpl jellybeanImpl = this.mImplWeak.get();
+                if (jellybeanImpl == null || jellybeanImpl.mVolumeCallback == null) {
+                    return;
+                }
+                jellybeanImpl.mVolumeCallback.onVolumeUpdateRequest(i);
+            }
+
+            @Override // mx_android.support.v7.media.MediaRouterJellybean.VolumeCallback
+            public void onVolumeSetRequest(Object obj, int i) {
+                JellybeanImpl jellybeanImpl = this.mImplWeak.get();
+                if (jellybeanImpl == null || jellybeanImpl.mVolumeCallback == null) {
+                    return;
+                }
+                jellybeanImpl.mVolumeCallback.onVolumeSetRequest(i);
+            }
+        }
+    }
+}

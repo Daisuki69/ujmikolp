@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_cash_placeholder_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/no_cash_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f08028f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/no_cash_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_account_limits_no_cash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cash_image_view"
+        style="@style/JekoBoldH5.Primary"/>
+    <TextView
+        android:id="@+id/no_cash_subtitle_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_account_limits_no_cash_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cash_title_text_view"
+        style="@style/CerebriBookLink.Secondary200"/>
+    <Button
+        android:id="@+id/no_cash_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:text="@string/maya_label_account_limits_no_cash_cta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_cash_subtitle_text_view"
+        style="@style/MayaButtonPrimaryMedium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

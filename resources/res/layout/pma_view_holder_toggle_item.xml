@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_pma_view_holder_toggle_item"
+    android:paddingLeft="@dimen/pma_padding_normal"
+    android:paddingTop="@dimen/pma_padding_small"
+    android:paddingRight="@dimen/pma_padding_small"
+    android:paddingBottom="@dimen/pma_padding_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/pma_padding_normal"
+    android:paddingEnd="@dimen/pma_padding_small">
+    <TextView
+        android:id="@+id/name_pma_view_holder_toggle_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Body2DarkMedium"/>
+    <dOYHB6.lN8Dz0.d8NVX3
+        android:orientation="vertical"
+        android:id="@+id/container_pma_view_holder_toggle_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name_pma_view_holder_toggle_item"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

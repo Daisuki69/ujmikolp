@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColorHint="@color/pma_text_color_light_grey"
+    android:id="@+id/container_text_input_layout_pma_view_shop_v3_payment_dynamic_field"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pma_margin_medium"
+    app:errorTextAppearance="@style/pma_text_input_layout_error_appearance"
+    app:hintTextAppearance="@style/CaptionDarkLight">
+    <com.google.android.material.textfield.TextInputEditText
+        android:textColorHint="@color/pma_text_color_light_grey"
+        android:id="@+id/entry_text_input_edit_text_pma_view_shop_v3_payment_dynamic_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionNext"
+        style="@style/BodyDark"/>
+</com.google.android.material.textfield.TextInputLayout>

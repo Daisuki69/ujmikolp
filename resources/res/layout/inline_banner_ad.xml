@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inline_banner_container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inline_banner_ad_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/adkit_radius_16dp"
+        app:cardElevation="0dp">
+        <include
+            android:id="@+id/inline_banner_native_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/inline_banner_native_ad"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/shimmer_inline_view_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/adkit_spacing_72dp"
+            android:scaleType="fitXY"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/adkit_loading_shimmer"
+            app:lottie_scale="1"
+            app:srcCompat="@drawable/bg_shimmer"/>
+    </androidx.cardview.widget.CardView>
+</dOYHB6.lN8Dz0.yf3D09>

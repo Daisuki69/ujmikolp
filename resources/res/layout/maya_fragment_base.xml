@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pma_fragment_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/view_loading_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/view_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/view_error_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/view_error_2_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/view_maintenance_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</dOYHB6.lN8Dz0.yf3D09>

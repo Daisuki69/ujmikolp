@@ -1,0 +1,9 @@
+package io.split.android.client.service.sseclient.notifications.memberships;
+
+import androidx.annotation.Nullable;
+import io.split.android.client.service.sseclient.notifications.MembershipNotification;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface MembershipsNotificationProcessor {
+    void process(@Nullable MembershipNotification membershipNotification);
+}

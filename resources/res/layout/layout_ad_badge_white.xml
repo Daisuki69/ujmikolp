@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/adkit_text_size_8sp"
+    android:textStyle="bold"
+    android:textColor="@color/grey5"
+    android:gravity="center"
+    android:id="@+id/ad_badge_textview"
+    android:background="@drawable/bg_ad_badge_white"
+    android:paddingTop="@dimen/adkit_spacing_4dp"
+    android:paddingBottom="@dimen/adkit_spacing_4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/font_family_cerebri_sans_pro_medium"
+    android:paddingStart="@dimen/adkit_spacing_6dp"
+    android:paddingEnd="@dimen/adkit_spacing_6dp"
+    android:textFontWeight="700"/>

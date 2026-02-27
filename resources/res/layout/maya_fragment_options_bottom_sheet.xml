@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_bg_alert_dialog_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_view_options_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_extra_large"
+        android:layout_marginStart="@dimen/pma_margin_large"
+        android:layout_marginEnd="@dimen/pma_margin_large"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoBoldH6.Primary"/>
+    <Button
+        android:id="@+id/button_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_normal"
+        android:layout_marginStart="@dimen/pma_margin_large"
+        android:layout_marginEnd="@dimen/pma_margin_large"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_options_title"
+        style="@style/MayaButtonGreyLarge"/>
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_medium"
+        android:layout_marginBottom="@dimen/pma_margin_normal"
+        android:text="@string/pma_label_cancel"
+        android:layout_marginStart="@dimen/pma_margin_large"
+        android:layout_marginEnd="@dimen/pma_margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_option"
+        style="@style/MayaButtonSecondaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

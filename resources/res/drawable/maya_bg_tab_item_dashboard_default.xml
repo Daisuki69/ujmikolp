@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="@dimen/pma_margin_small">
+        <shape>
+            <solid android:color="?attr/mayaTabLayoutDefaultColor"/>
+            <corners android:radius="@dimen/pma_radius_120dp"/>
+        </shape>
+    </item>
+</layer-list>

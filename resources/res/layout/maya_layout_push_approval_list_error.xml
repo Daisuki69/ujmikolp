@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_view_network_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f0802f0"/>
+    <TextView
+        android:id="@+id/text_view_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_that_didnt_load_right"
+        style="@style/JekoBoldH5.Primary"/>
+    <TextView
+        android:id="@+id/text_view_error_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_medium"
+        android:text="@string/maya_label_connection_issue_split"
+        android:textAlignment="center"
+        style="@style/CerebriBookLongRead.Secondary"/>
+    <Button
+        android:id="@+id/button_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:text="@string/maya_label_try_again"
+        style="@style/MayaButtonPrimaryLarge"/>
+</dOYHB6.lN8Dz0.d8NVX3>

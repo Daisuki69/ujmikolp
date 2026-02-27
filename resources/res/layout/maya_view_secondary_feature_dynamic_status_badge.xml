@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_badge_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/maya_secondary_feature_badge_height"
+    app:cardCornerRadius="@dimen/maya_radius_16dp">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_view_badge_label"
+        android:paddingLeft="@dimen/maya_secondary_feature_badge_label_inset_horizontal"
+        android:paddingTop="@dimen/maya_secondary_feature_badge_label_inset_vertical"
+        android:paddingRight="@dimen/maya_secondary_feature_badge_label_inset_horizontal"
+        android:paddingBottom="@dimen/maya_secondary_feature_badge_label_inset_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:maxLength="@integer/maya_secondary_feature_badge_text_max_character_limit"
+        android:paddingHorizontal="@dimen/maya_secondary_feature_badge_label_inset_horizontal"
+        android:paddingVertical="@dimen/maya_secondary_feature_badge_label_inset_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoOverlineSmall.Secondary"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_badge_dot"
+        android:visibility="gone"
+        android:layout_width="@dimen/maya_secondary_feature_badge_dot_size"
+        android:layout_height="@dimen/maya_secondary_feature_badge_dot_size"
+        android:src="@drawable/maya_ic_secondary_feature_badge_dot"
+        app:srcCompat="@drawable/maya_ic_secondary_feature_badge_dot"/>
+</androidx.cardview.widget.CardView>

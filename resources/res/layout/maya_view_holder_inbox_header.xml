@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view_pma_view_holder_inbox_header"
+    android:paddingTop="@dimen/pma_padding_normal"
+    android:paddingBottom="@dimen/pma_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/pma_padding_normal"
+    style="@style/JekoOverlineBig.Tertiary"/>

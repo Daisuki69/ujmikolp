@@ -1,0 +1,19 @@
+{
+	"mayabank_options": [{
+		"payment_option": "REGULAR_SAVINGS_CONSUMER_DEPOSIT",
+		"priority": 1,
+		"display_name": "My Savings",
+		"icon_url": {
+			"android": {
+				"mdpi": "https://url-to-image.com/mayabank1.png",
+				"hdpi": "https://url-to-image.com/mayabank1_5.png",
+				"xhdpi": "https://url-to-image.com/mayabank2.png"
+			},
+			"ios": {
+				"retina": "https://url-to-image.com/mayabank2.png",
+				"3x": "https://url-to-image.com/mayabankx3.png"
+			}
+		}
+	}],
+	"payment_tokens": []
+}

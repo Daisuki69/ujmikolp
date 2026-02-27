@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:gravity="bottom">
+                <shape android:shape="rectangle">
+                    <size android:height="2dp"/>
+                    <solid
+                        android:width="2dp"
+                        android:color="@color/pma_warning_180_shade"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

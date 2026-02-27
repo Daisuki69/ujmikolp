@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edd_text_input_layout_pma_view_edd_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_normal"
+        app:errorTextAppearance="@style/pma_text_input_layout_error_appearance"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="@dimen/pma_text_size_body"
+            android:id="@+id/edd_edit_text_pma_view_edd_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pma_hint_edd_name_of_companies"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/remove_image_view_pma_view_edd_input"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f0804f9"
+        app:layout_constraintBottom_toBottomOf="@+id/edd_text_input_layout_pma_view_edd_input"
+        app:layout_constraintLeft_toRightOf="@+id/edd_text_input_layout_pma_view_edd_input"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edd_text_input_layout_pma_view_edd_input"
+        app:layout_constraintWidth_percent="0.2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

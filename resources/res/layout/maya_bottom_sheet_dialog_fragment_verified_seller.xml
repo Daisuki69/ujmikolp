@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_layout"
+    android:paddingLeft="@dimen/pma_margin_large"
+    android:paddingTop="@dimen/pma_margin_extra_large"
+    android:paddingRight="@dimen/pma_margin_large"
+    android:paddingBottom="@dimen/pma_margin_extra_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/about_verified_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maya_ic_information"/>
+    <TextView
+        android:id="@+id/about_verified_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pma_label_title_about_verified_sellers"
+        android:layout_marginStart="@dimen/pma_margin_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_verified_icon"
+        app:layout_constraintStart_toEndOf="@+id/about_verified_icon"
+        app:layout_constraintTop_toTopOf="@+id/about_verified_icon"
+        style="@style/JekoBoldTextBody.Primary"/>
+    <com.paymaya.common.widget.HtmlTextView
+        android:id="@+id/about_verified_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:text="@string/maya_html_content_verified_sellers_info"
+        app:layout_constraintTop_toBottomOf="@+id/about_verified_header"
+        style="@style/CerebriBookLongRead.Secondary200"/>
+    <Button
+        android:id="@+id/about_verified_got_it"
+        android:layout_width="0dp"
+        android:text="@string/pma_label_maya_credit_got_it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_verified_description"
+        style="@style/MayaButtonPrimaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

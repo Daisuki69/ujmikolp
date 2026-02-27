@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/growth_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_52dp"
+        android:src="@drawable/pma_ic_growth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/invest_with_paymaya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_normal"
+        android:text="@string/pma_label_invest_with_paymaya"
+        android:layout_marginStart="@dimen/pma_margin_2x_large"
+        android:layout_marginEnd="@dimen/pma_margin_2x_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/growth_icon"
+        style="@style/SubtitleDarkMedium"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/invest_for_upgraded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:layout_marginBottom="@dimen/pma_margin_48dp"
+        android:text="@string/pma_format_invest_for_upgraded"
+        android:lineSpacingExtra="@dimen/pma_line_spacing_3sp"
+        android:layout_marginStart="@dimen/pma_margin_2x_large"
+        android:layout_marginEnd="@dimen/pma_margin_2x_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invest_with_paymaya"
+        style="@style/Body2DarkLight"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

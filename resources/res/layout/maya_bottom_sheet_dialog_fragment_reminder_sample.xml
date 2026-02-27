@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_bg_content_information_rounded_top"
+    android:paddingLeft="@dimen/maya_padding_large"
+    android:paddingTop="@dimen/maya_padding_extra_large"
+    android:paddingRight="@dimen/maya_padding_large"
+    android:paddingBottom="@dimen/maya_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/maya_padding_large">
+    <TextView
+        android:id="@+id/text_view_sample_reminder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_sample_reminder_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoBoldH6.Primary"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_sample_reminder_graphic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_normal"
+        android:src="?attr/mayaDrawable_FavoritesSetReminderSampleGraphic"
+        android:scaleType="center"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_sample_reminder_title"
+        app:srcCompat="?attr/mayaDrawable_FavoritesSetReminderSampleGraphic"/>
+    <TextView
+        android:id="@+id/text_view_sample_reminder_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_sample_reminder_description"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_sample_reminder_graphic"
+        style="@style/JekoSemiBoldLongRead.Primary"/>
+    <Button
+        android:id="@+id/button_got_it"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_got_it"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_sample_reminder_description"
+        style="@style/MayaButtonPrimaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

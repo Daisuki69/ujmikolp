@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/pma_text_size_body"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/text_view_date_pma_view_date_header_view_all"
+    android:background="@drawable/pma_background_white_thin_border"
+    android:paddingLeft="@dimen/pma_padding_normal"
+    android:paddingTop="@dimen/pma_padding_normal"
+    android:paddingRight="@dimen/pma_padding_normal"
+    android:paddingBottom="@dimen/pma_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/roboto_medium"/>

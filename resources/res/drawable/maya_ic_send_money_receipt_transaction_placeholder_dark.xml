@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xsi="http://schemas.android.com/aapt" xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/maya_opacity_purple_25"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/maya_ic_send_money_receipt_transaction_icon"
+        android:left="@dimen/maya_padding_15dp"
+        android:top="@dimen/maya_padding_15dp"
+        android:right="@dimen/maya_padding_15dp"
+        android:bottom="@dimen/maya_padding_15dp"/>
+</layer-list>

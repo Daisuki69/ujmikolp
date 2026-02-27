@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/maya_ic_back_web"
+        android:id="@+id/back_maya_menu_web"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/maya_ic_forward_web"
+        android:id="@+id/forward_maya_menu_web"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/maya_ic_refresh_web"
+        android:id="@+id/refresh_maya_menu_web"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+</menu>

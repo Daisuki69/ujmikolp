@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/maya_img_catalog_tile_placeholder"
+    android:insetLeft="@dimen/maya_margin_24"
+    android:insetRight="@dimen/maya_margin_24"
+    android:insetTop="@dimen/maya_margin_24"
+    android:insetBottom="@dimen/maya_margin_24"/>

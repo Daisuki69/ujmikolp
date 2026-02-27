@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maya_kyc_work_details_flow"
+    app:startDestination="@+id/maya_kyc_work_details_fragment">
+    <fragment
+        android:label="@string/maya_kyc_work_details_screen_label"
+        android:name="com.paymaya.mayaui.kyczoloz.view.fragment.impl.MayaKycWorkDetailsFragment"
+        android:id="@+id/maya_kyc_work_details_fragment">
+        <argument
+            android:name="navigationSource"
+            android:defaultValue="normal_flow"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_edit_address_flow"
+            app:destination="@+id/maya_kyc_edit_address_flow"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_single_selection_bottom_sheet_dialog_fragment"
+            app:destination="@+id/maya_kyc_single_selection_bottom_sheet_dialog_fragment"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_error_dialog_fragment"
+            app:destination="@+id/maya_kyc_error_dialog_fragment"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_complete_personal_information_fragment"
+            app:destination="@+id/maya_kyc_complete_personal_information_fragment"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_amlc_certification_flow"
+            app:destination="@+id/maya_kyc_amlc_certification_flow"/>
+        <action
+            android:id="@+id/action_maya_kyc_work_details_fragment_to_maya_kyc_ssne_requirements_flow"
+            app:destination="@+id/maya_kyc_ssne_requirement_flow"/>
+    </fragment>
+</navigation>

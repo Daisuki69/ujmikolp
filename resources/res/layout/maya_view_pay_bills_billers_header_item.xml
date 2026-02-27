@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/biller_header_container_frame"
+    android:background="@drawable/maya_bg_billers_category_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maya_margin_small"/>

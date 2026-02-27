@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/transparent"/>
+    <stroke
+        android:width="@dimen/maya_stroke_width_small"
+        android:color="@color/maya_primary_grown_green"/>
+    <corners android:radius="@dimen/pma_radius_4dp"/>
+    <size
+        android:height="@dimen/maya_margin_60"
+        android:width="@dimen/maya_margin_60"/>
+</shape>

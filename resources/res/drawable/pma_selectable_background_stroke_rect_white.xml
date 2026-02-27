@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/pma_button_gray_background_pressed">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/pma_stroke_width_small"
+                android:color="@color/pma_border"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</ripple>

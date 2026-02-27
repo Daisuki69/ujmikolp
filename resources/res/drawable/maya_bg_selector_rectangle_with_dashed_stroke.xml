@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/maya_radius_16dp"/>
+            <stroke
+                android:width="@dimen/maya_stroke_width_small"
+                android:color="@color/maya_shades_of_grey_3"
+                android:dashWidth="@dimen/maya_kyc_stroke_dash_width_20dp"
+                android:dashGap="@dimen/maya_kyc_stroke_dash_gap_8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/maya_radius_16dp"/>
+            <stroke
+                android:width="@dimen/maya_stroke_width_small"
+                android:color="@color/maya_shades_of_grey_3"
+                android:dashWidth="@dimen/maya_kyc_stroke_dash_width_20dp"
+                android:dashGap="@dimen/maya_kyc_stroke_dash_gap_8dp"/>
+        </shape>
+    </item>
+</selector>

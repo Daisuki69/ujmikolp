@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="fill"
+        android:drawable="@color/black"/>
+    <item
+        android:gravity="center"
+        android:height="@dimen/maya_splash_screen_graphic_logo_height"
+        android:width="@dimen/maya_splash_screen_graphic_logo_width"
+        android:drawable="0x7f0802a0"/>
+</layer-list>

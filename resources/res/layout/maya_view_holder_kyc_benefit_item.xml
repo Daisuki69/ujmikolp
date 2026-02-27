@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/container_constraint_layout_benefits_view_holder"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maya_kyc_complete_your_maya_experience_benefits_view_holder_height"
+    android:layout_marginTop="@dimen/maya_margin_extra_small"
+    android:layout_marginBottom="@dimen/maya_margin_extra_small"
+    android:layout_marginVertical="@dimen/maya_margin_extra_small">
+    <ImageView
+        android:id="@+id/maya_kyc_benefits_icon_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_kyc_complete_your_maya_experience_benefits_view_holder_image_height"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/maya_kyc_benefits_text_view"
+        android:padding="@dimen/maya_padding_2x_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="3"
+        style="@style/JekoSemiBoldTextBody.Primary"/>
+</dOYHB6.lN8Dz0.d8NVX3>

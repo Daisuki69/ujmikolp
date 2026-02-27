@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/agreement_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/maya_icon_size_extra_small"
+        android:layout_height="@dimen/maya_icon_size_extra_small"
+        android:src="@drawable/maya_ic_oval_marker"
+        android:layout_marginStart="@dimen/maya_margin_extra_large"/>
+    <TextView
+        android:id="@+id/agreement_text_view"
+        android:padding="@dimen/maya_padding_extra_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/maya_padding_extra_small"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/CerebriBookLongRead.Accent"/>
+</dOYHB6.lN8Dz0.d8NVX3>

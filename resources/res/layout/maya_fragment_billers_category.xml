@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/billers_category_nested_scroll_view"
+    android:background="?attr/mayaColorBackgroundPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textColorHint="?attr/mayaColorInputLayoutHintTextColor"
+            android:gravity="center_vertical"
+            android:id="@+id/edit_text_search_field"
+            android:background="@drawable/maya_bg_search_editable"
+            android:paddingLeft="@dimen/maya_padding_large"
+            android:paddingTop="@dimen/maya_padding_18dp"
+            android:paddingRight="@dimen/maya_padding_large"
+            android:paddingBottom="@dimen/maya_padding_18dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:longClickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maya_margin_large"
+            android:layout_marginTop="@dimen/maya_margin_normal"
+            android:layout_marginRight="@dimen/maya_margin_large"
+            android:hint="@string/maya_pay_bill_search_label"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/maya_padding_normal"
+            android:imeOptions="actionDone"
+            android:drawableStart="?attr/mayaSearchIcon"
+            android:layout_marginHorizontal="@dimen/maya_margin_large"
+            android:paddingHorizontal="@dimen/maya_padding_large"
+            android:paddingVertical="@dimen/maya_padding_18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/JekoSemiBoldTextBody.Primary"/>
+        <dOYHB6.lN8Dz0.yf3D09
+            android:id="@+id/frame_layout_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/maya_margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_search_field"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

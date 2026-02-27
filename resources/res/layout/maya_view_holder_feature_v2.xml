@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/image_button_secondary_feature_icon"
+        android:background="@drawable/maya_bg_selector_image_button_tiles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/text_view_secondary_feature_name"
+        android:paddingLeft="@dimen/maya_padding_2x_small"
+        android:paddingRight="@dimen/maya_padding_2x_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/maya_padding_2x_small"
+        app:layout_constraintLeft_toLeftOf="@+id/image_button_secondary_feature_icon"
+        app:layout_constraintRight_toRightOf="@+id/image_button_secondary_feature_icon"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_secondary_feature_icon"
+        style="@style/JekoBoldSmallText.Tertiary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

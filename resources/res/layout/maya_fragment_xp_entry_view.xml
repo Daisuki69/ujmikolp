@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xp_content_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/maya_margin_20">
+    <include
+        android:id="@+id/xp_meter_content_view"
+        android:visibility="gone"
+        layout="@layout/maya_view_xp_meter_content"/>
+    <include
+        android:id="@+id/xp_loading_animation_view"
+        android:visibility="gone"
+        layout="@layout/maya_view_xp_loading_layout"/>
+    <include
+        android:id="@+id/xp_error_view"
+        android:visibility="gone"
+        layout="@layout/maya_view_xp_error_layout"/>
+    <include
+        android:id="@+id/xp_maintenance_view"
+        android:visibility="gone"
+        layout="@layout/maya_view_xp_maintenance_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

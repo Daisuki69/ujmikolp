@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/pma_opacity_white_50">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_5dp"/>
+                    <solid android:color="@color/pma_gray_60_tint"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/pma_radius_4dp"/>
+                    <solid android:color="@color/pma_primary_100_base"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

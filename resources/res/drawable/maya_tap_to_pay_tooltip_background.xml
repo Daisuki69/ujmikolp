@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/pma_margin_12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/grown_green"/>
+            <corners android:radius="@dimen/pma_margin_16dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="bottom|center_horizontal"
+        android:drawable="@drawable/maya_tap_to_pay_tooltip_tail"/>
+</layer-list>

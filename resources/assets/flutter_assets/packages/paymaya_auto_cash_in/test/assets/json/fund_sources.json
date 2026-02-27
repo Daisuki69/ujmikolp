@@ -1,0 +1,42 @@
+{
+    "mayabank_options": [],
+    "payment_tokens": [{
+		"payment_token_id": "b46b2543-fb4c-48d4-82b2-fb71e5485e32",
+		"payment_option": "REGULAR_SAVINGS_CONSUMER_DEPOSIT",
+		"display_name": "My Savings",
+		"last_four": "2346",
+		"priority": 1,
+		"balance": 100.0,
+		"icon_url": {
+			"android": {
+				"mdpi": "https://url-to-image.com/mayabank1.png",
+				"hdpi": "https://url-to-image.com/mayabank1_5.png",
+				"xhdpi": "https://url-to-image.com/mayabank2.png"
+			},
+			"ios": {
+				"retina": "https://url-to-image.com/mayabank2.png",
+				"3x": "https://url-to-image.com/mayabankx3.png"
+			}
+		}
+	},
+	{
+		"payment_token_id": "bb999a91-e218-4fd6-a6d4-ca61ea8a21f8",
+		"payment_option": "bankshortname",
+		"display_name": "Bank Name",
+		"last_four": "1234",
+    "balance": 100.0,
+		"priority": 2,
+		"icon_url": {
+			"android": {
+				"mdpi": "https://url-to-image.com/bank1.png",
+				"hdpi": "https://url-to-image.com/bank1_5.png",
+				"xhdpi": "https://url-to-image.com/bank2.png"
+			},
+			"ios": {
+				"retina": "https://url-to-image.com/bank2.png",
+				"3x": "https://url-to-image.com/bankx3.png"
+			}
+		}
+	}
+	]
+}

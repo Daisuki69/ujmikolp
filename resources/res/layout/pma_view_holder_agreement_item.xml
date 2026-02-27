@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_pma_view_holder_agreement_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/agreement_checkbox_view_pma_view_holder_agreement_item"
+        android:layout_width="@dimen/pma_dimen_maya_credit_checkbox_size"
+        android:layout_height="@dimen/pma_dimen_maya_credit_checkbox_size"
+        android:layout_marginTop="@dimen/pma_margin_extra_small"
+        android:button="@drawable/pma_selectable_background_checkbox_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/heading_text_view_pma_view_holder_agreement_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pma_margin_2x_small"
+        android:lineSpacingExtra="@dimen/pma_line_spacing_2sp"
+        android:layout_marginStart="@dimen/pma_margin_small"
+        android:layout_marginEnd="@dimen/pma_margin_small"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/subheading_text_description_view_pma_view_holder_agreement_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/agreement_checkbox_view_pma_view_holder_agreement_item"
+        app:layout_constraintTop_toTopOf="@+id/agreement_checkbox_view_pma_view_holder_agreement_item"
+        style="@style/Heading05StandardGray200"/>
+    <TextView
+        android:textColor="@color/aluminum"
+        android:id="@+id/subheading_text_description_view_pma_view_holder_agreement_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pma_margin_2x_small"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/pma_line_spacing_2sp"
+        android:layout_marginStart="@dimen/pma_margin_small"
+        android:layout_marginEnd="@dimen/pma_margin_small"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/agreement_checkbox_view_pma_view_holder_agreement_item"
+        style="@style/BodySmallStandardGray100"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

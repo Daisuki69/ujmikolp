@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/mayaColorChoiceCellBackgroundStatePressed">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="?attr/mayaColorChoiceCellBackgroundStatePressed"/>
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?attr/mayaColorChoiceCellBackgroundStateDefault"/>
+                    <corners android:radius="@dimen/pma_radius_16dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

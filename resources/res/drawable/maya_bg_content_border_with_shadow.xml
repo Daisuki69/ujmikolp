@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/maya_radius_16dp"/>
+            <gradient
+                android:startColor="@color/maya_primary_white_transparent"
+                android:endColor="@color/maya_opacity_modal_7"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="2500"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/maya_bg_content_border"
+        android:left="@dimen/maya_padding_3x_small"
+        android:top="@dimen/maya_padding_3x_small"
+        android:right="@dimen/maya_padding_3x_small"
+        android:bottom="@dimen/maya_padding_extra_small"/>
+</layer-list>

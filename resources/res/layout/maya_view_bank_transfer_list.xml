@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_bg_content_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_view_all_banks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_large"
+        android:text="@string/maya_label_all_banks"
+        android:layout_marginStart="@dimen/pma_margin_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoOverlineBig.Tertiary"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_view_loading"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/maya_bank_list_loading_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_all_banks_label"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/maya_loading_animation"
+        app:lottie_scale="1"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:layout_marginBottom="@dimen/pma_margin_medium"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_all_banks_label"
+        app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

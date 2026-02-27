@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_carousel_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/ad_carousel_recycler_view"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/adkit_spacing_20dp"
+        android:paddingEnd="@dimen/adkit_spacing_20dp"/>
+</dOYHB6.lN8Dz0.yf3D09>

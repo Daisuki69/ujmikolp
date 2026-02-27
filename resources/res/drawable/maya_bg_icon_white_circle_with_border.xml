@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:thicknessRatio="2"
+    android:useLevel="false"
+    android:innerRadius="0dp">
+    <solid android:color="@color/maya_primary_white"/>
+    <stroke
+        android:width="@dimen/pma_stroke_width_normal"
+        android:color="@color/maya_shades_of_grey_2"/>
+</shape>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maya_reg_v2_nav_graph"
+    app:startDestination="@+id/maya_account_creation_fragment">
+    <fragment
+        android:label="@string/maya_label_reg_v2_create_account_title"
+        android:name="com.paymaya.mayaui.regv2.view.fragment.impl.MayaAccountCreationFragment"
+        android:id="@+id/maya_account_creation_fragment">
+        <action
+            android:id="@+id/action_maya_account_creation_fragment_to_maya_account_provision_fragment"
+            app:destination="@+id/maya_account_provision_fragment"/>
+    </fragment>
+    <fragment
+        android:label="@string/maya_label_reg_v2_account_provision_title"
+        android:name="com.paymaya.mayaui.regv2.view.fragment.impl.MayaAccountProvisionFragment"
+        android:id="@+id/maya_account_provision_fragment">
+        <argument
+            android:name="consents"
+            app:argType="com.paymaya.domain.model.Consent[]"
+            app:nullable="true"/>
+        <argument
+            android:name="accountProvisions"
+            app:argType="com.paymaya.domain.model.DataPrivacyProvision[]"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_maya_account_provision_fragment_to_maya_verify_registration_fragment"
+            app:destination="@+id/maya_verify_registration_fragment"/>
+    </fragment>
+    <fragment
+        android:label="@string/maya_label_reg_v2_verify_registration_title"
+        android:name="com.paymaya.mayaui.regv2.view.fragment.impl.MayaVerifyRegistrationV2Fragment"
+        android:id="@+id/maya_verify_registration_fragment"/>
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maya_kyc_bottom_sheets_flow"
+    app:startDestination="@+id/kyc_confirm_exit_bottom_sheet_dialog_fragment">
+    <dialog
+        android:label="@string/maya_kyc_confirm_exit_dialog_title"
+        android:name="com.paymaya.mayaui.kyczoloz.view.fragment.impl.MayaKycConfirmExitBottomSheetDialogFragment"
+        android:id="@+id/kyc_confirm_exit_bottom_sheet_dialog_fragment">
+        <argument
+            android:name="destinationScreenName"
+            app:argType="string"
+            app:nullable="false"/>
+    </dialog>
+</navigation>

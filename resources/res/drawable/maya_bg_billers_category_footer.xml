@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/mayaContentViewBorderColor"/>
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="@dimen/maya_radius_16dp"
+                android:bottomRightRadius="@dimen/maya_radius_16dp"/>
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/maya_padding_3x_small"
+        android:right="@dimen/maya_padding_3x_small"
+        android:bottom="@dimen/maya_padding_3x_small">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/mayaContentViewBackgroundColor"/>
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="@dimen/maya_radius_16dp"
+                android:bottomRightRadius="@dimen/maya_radius_16dp"/>
+        </shape>
+    </item>
+</layer-list>

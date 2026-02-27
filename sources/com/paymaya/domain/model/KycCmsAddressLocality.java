@@ -1,0 +1,168 @@
+package com.paymaya.domain.model;
+
+import We.s;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.media3.extractor.text.ttml.TtmlNode;
+import cj.C1112C;
+import com.google.android.gms.measurement.api.AppMeasurementSdk;
+import com.paymaya.common.utility.AbstractC1213b;
+import g3.InterfaceC1497a;
+import g3.InterfaceC1498b;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.j;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class KycCmsAddressLocality implements Parcelable {
+    public static final Parcelable.Creator<KycCmsAddressLocality> CREATOR = new Creator();
+
+    @InterfaceC1497a
+    @InterfaceC1498b(TtmlNode.ATTR_ID)
+    private final Integer id;
+
+    @InterfaceC1497a
+    @InterfaceC1498b(AppMeasurementSdk.ConditionalUserProperty.NAME)
+    private final String name;
+
+    @InterfaceC1497a
+    @InterfaceC1498b("zip_codes")
+    private final List<KycCmsAddressZipCode> zipCodes;
+
+    public static final class Creator implements Parcelable.Creator<KycCmsAddressLocality> {
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public final KycCmsAddressLocality createFromParcel(Parcel parcel) {
+            j.g(parcel, "parcel");
+            ArrayList arrayList = null;
+            Integer numValueOf = parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt());
+            String string = parcel.readString();
+            if (parcel.readInt() != 0) {
+                int i = parcel.readInt();
+                ArrayList arrayList2 = new ArrayList(i);
+                int I4 = 0;
+                while (I4 != i) {
+                    I4 = AbstractC1213b.I(KycCmsAddressZipCode.CREATOR, parcel, arrayList2, I4, 1);
+                }
+                arrayList = arrayList2;
+            }
+            return new KycCmsAddressLocality(numValueOf, string, arrayList);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public final KycCmsAddressLocality[] newArray(int i) {
+            return new KycCmsAddressLocality[i];
+        }
+    }
+
+    public KycCmsAddressLocality() {
+        this(null, null, null, 7, null);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static /* synthetic */ KycCmsAddressLocality copy$default(KycCmsAddressLocality kycCmsAddressLocality, Integer num, String str, List list, int i, Object obj) {
+        if ((i & 1) != 0) {
+            num = kycCmsAddressLocality.id;
+        }
+        if ((i & 2) != 0) {
+            str = kycCmsAddressLocality.name;
+        }
+        if ((i & 4) != 0) {
+            list = kycCmsAddressLocality.zipCodes;
+        }
+        return kycCmsAddressLocality.copy(num, str, list);
+    }
+
+    public final Integer component1() {
+        return this.id;
+    }
+
+    public final String component2() {
+        return this.name;
+    }
+
+    public final List<KycCmsAddressZipCode> component3() {
+        return this.zipCodes;
+    }
+
+    public final KycCmsAddressLocality copy(Integer num, String str, List<KycCmsAddressZipCode> list) {
+        return new KycCmsAddressLocality(num, str, list);
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof KycCmsAddressLocality)) {
+            return false;
+        }
+        KycCmsAddressLocality kycCmsAddressLocality = (KycCmsAddressLocality) obj;
+        return j.b(this.id, kycCmsAddressLocality.id) && j.b(this.name, kycCmsAddressLocality.name) && j.b(this.zipCodes, kycCmsAddressLocality.zipCodes);
+    }
+
+    public final Integer getId() {
+        return this.id;
+    }
+
+    public final String getName() {
+        return this.name;
+    }
+
+    public final List<KycCmsAddressZipCode> getZipCodes() {
+        return this.zipCodes;
+    }
+
+    public int hashCode() {
+        Integer num = this.id;
+        int iHashCode = (num == null ? 0 : num.hashCode()) * 31;
+        String str = this.name;
+        int iHashCode2 = (iHashCode + (str == null ? 0 : str.hashCode())) * 31;
+        List<KycCmsAddressZipCode> list = this.zipCodes;
+        return iHashCode2 + (list != null ? list.hashCode() : 0);
+    }
+
+    public String toString() {
+        Integer num = this.id;
+        String str = this.name;
+        return s.r(AbstractC1213b.O(num, "KycCmsAddressLocality(id=", ", name=", str, ", zipCodes="), this.zipCodes, ")");
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i) {
+        j.g(dest, "dest");
+        Integer num = this.id;
+        if (num == null) {
+            dest.writeInt(0);
+        } else {
+            AbstractC1213b.T(dest, 1, num);
+        }
+        dest.writeString(this.name);
+        List<KycCmsAddressZipCode> list = this.zipCodes;
+        if (list == null) {
+            dest.writeInt(0);
+            return;
+        }
+        Iterator itP = AbstractC1213b.P(dest, 1, list);
+        while (itP.hasNext()) {
+            ((KycCmsAddressZipCode) itP.next()).writeToParcel(dest, i);
+        }
+    }
+
+    public KycCmsAddressLocality(Integer num, String str, List<KycCmsAddressZipCode> list) {
+        this.id = num;
+        this.name = str;
+        this.zipCodes = list;
+    }
+
+    public KycCmsAddressLocality(Integer num, String str, List list, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? 0 : num, (i & 2) != 0 ? "" : str, (i & 4) != 0 ? C1112C.f9377a : list);
+    }
+}

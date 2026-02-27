@@ -1,0 +1,14 @@
+package mx_android.support.v4.view;
+
+import android.view.View;
+import android.view.animation.Interpolator;
+
+/* JADX INFO: loaded from: classes7.dex */
+class ViewPropertyAnimatorCompatJellybeanMr2 {
+    ViewPropertyAnimatorCompatJellybeanMr2() {
+    }
+
+    public static Interpolator getInterpolator(View view) {
+        return (Interpolator) view.animate().getInterpolator();
+    }
+}

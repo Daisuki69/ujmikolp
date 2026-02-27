@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_button_with_icon"
+    android:background="@drawable/maya_bg_selector_button_black_default"
+    android:padding="@dimen/maya_padding_18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/maya_button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maya_ic_resources"
+        android:layout_marginEnd="@dimen/maya_margin_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/maya_button_text"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="@color/maya_primary_white"
+        android:gravity="center_vertical"
+        android:id="@+id/maya_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_upload_qr"
+        android:maxLines="1"
+        app:autoSizeMaxTextSize="@dimen/maya_text_size_text_body"
+        app:autoSizeMinTextSize="@dimen/maya_text_size_auto_size_min_smallest"
+        app:autoSizeTextType="uniform"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/maya_button_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/maya_button_icon"
+        app:layout_constraintTop_toTopOf="@+id/maya_button_icon"
+        style="@style/JekoBoldTextBody"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

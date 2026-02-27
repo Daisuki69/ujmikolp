@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/biller_header_container_frame"
+    android:background="@drawable/maya_bg_billers_category_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/maya_margin_large"
+    android:layout_marginRight="@dimen/maya_margin_large"
+    android:layout_marginHorizontal="@dimen/maya_margin_large">
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/biller_header_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_normal"
+        android:layout_marginBottom="@dimen/maya_margin_extra_small"
+        android:layout_marginStart="@dimen/maya_margin_normal"
+        android:layout_marginEnd="@dimen/maya_margin_normal"
+        style="@style/JekoOverlineBig.Tertiary"/>
+</dOYHB6.lN8Dz0.yf3D09>

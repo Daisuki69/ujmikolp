@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/lottie_animation_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_input_layout_min_height"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pma_loading_shimmer"
+        app:lottie_scale="1"
+        app:srcCompat="@drawable/pma_background_shimmer_paymaya_placeholder"/>
+    <com.paymaya.mayaui.common.view.widget.MayaInputLayout
+        android:layout_gravity="center_vertical"
+        android:id="@+id/maya_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/KycRegularTextInputLayout"/>
+</dOYHB6.lN8Dz0.yf3D09>

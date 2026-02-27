@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/maya_bg_default_bottom_dialog_sheet"
+    android:paddingLeft="@dimen/maya_padding_large"
+    android:paddingRight="@dimen/maya_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/maya_padding_large">
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:layout_marginBottom="@dimen/maya_margin_large"
+        style="@style/JekoBoldSubline.Primary"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_item_list"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="@dimen/maya_margin_extra_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</dOYHB6.lN8Dz0.d8NVX3>

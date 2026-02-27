@@ -1,0 +1,138 @@
+package com.google.android.gms.internal.mlkit_vision_face;
+
+import v2.InterfaceC2336a;
+import v2.InterfaceC2337b;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzix implements InterfaceC2336a {
+    public static final InterfaceC2336a zza = new zzix();
+
+    private zzix() {
+    }
+
+    @Override // v2.InterfaceC2336a
+    public final void configure(InterfaceC2337b interfaceC2337b) {
+        interfaceC2337b.registerEncoder(zzkw.class, zzgq.zza);
+        interfaceC2337b.registerEncoder(zzmv.class, zzip.zza);
+        interfaceC2337b.registerEncoder(zzkx.class, zzgr.zza);
+        interfaceC2337b.registerEncoder(zzla.class, zzgt.zza);
+        interfaceC2337b.registerEncoder(zzky.class, zzgs.zza);
+        interfaceC2337b.registerEncoder(zzkz.class, zzgu.zza);
+        interfaceC2337b.registerEncoder(zzjr.class, zzfz.zza);
+        interfaceC2337b.registerEncoder(zzjq.class, zzfy.zza);
+        interfaceC2337b.registerEncoder(zzkl.class, zzgj.zza);
+        interfaceC2337b.registerEncoder(zzmp.class, zzih.zza);
+        interfaceC2337b.registerEncoder(zzjp.class, zzfx.zza);
+        interfaceC2337b.registerEncoder(zzjo.class, zzfw.zza);
+        interfaceC2337b.registerEncoder(zzll.class, zzhf.zza);
+        interfaceC2337b.registerEncoder(zznn.class, zzgf.zza);
+        interfaceC2337b.registerEncoder(zzkh.class, zzgh.zza);
+        interfaceC2337b.registerEncoder(zzkd.class, zzge.zza);
+        interfaceC2337b.registerEncoder(zzlo.class, zzhg.zza);
+        interfaceC2337b.registerEncoder(zzmm.class, zzie.zza);
+        interfaceC2337b.registerEncoder(zzmn.class, zzif.zza);
+        interfaceC2337b.registerEncoder(zzml.class, zzid.zza);
+        interfaceC2337b.registerEncoder(zzle.class, zzha.zza);
+        interfaceC2337b.registerEncoder(zznm.class, zzfg.zza);
+        interfaceC2337b.registerEncoder(zzlf.class, zzhb.zza);
+        interfaceC2337b.registerEncoder(zzlp.class, zzhh.zza);
+        interfaceC2337b.registerEncoder(zzls.class, zzhk.zza);
+        interfaceC2337b.registerEncoder(zzlr.class, zzhj.zza);
+        interfaceC2337b.registerEncoder(zzlq.class, zzhi.zza);
+        interfaceC2337b.registerEncoder(zzlx.class, zzhp.zza);
+        interfaceC2337b.registerEncoder(zzly.class, zzhq.zza);
+        interfaceC2337b.registerEncoder(zzma.class, zzhs.zza);
+        interfaceC2337b.registerEncoder(zzlz.class, zzhr.zza);
+        interfaceC2337b.registerEncoder(zzld.class, zzgz.zza);
+        interfaceC2337b.registerEncoder(zzmb.class, zzht.zza);
+        interfaceC2337b.registerEncoder(zzmc.class, zzhu.zza);
+        interfaceC2337b.registerEncoder(zzmd.class, zzhv.zza);
+        interfaceC2337b.registerEncoder(zzme.class, zzhw.zza);
+        interfaceC2337b.registerEncoder(zzmk.class, zzib.zza);
+        interfaceC2337b.registerEncoder(zzmj.class, zzic.zza);
+        interfaceC2337b.registerEncoder(zzlw.class, zzhl.zza);
+        interfaceC2337b.registerEncoder(zzkp.class, zzgo.zza);
+        interfaceC2337b.registerEncoder(zzlu.class, zzhn.zza);
+        interfaceC2337b.registerEncoder(zzlt.class, zzhm.zza);
+        interfaceC2337b.registerEncoder(zzlv.class, zzho.zza);
+        interfaceC2337b.registerEncoder(zzmo.class, zzig.zza);
+        interfaceC2337b.registerEncoder(zzmz.class, zzit.zza);
+        interfaceC2337b.registerEncoder(zzjd.class, zzfl.zza);
+        interfaceC2337b.registerEncoder(zzjb.class, zzfj.zza);
+        interfaceC2337b.registerEncoder(zzja.class, zzfi.zza);
+        interfaceC2337b.registerEncoder(zzjc.class, zzfk.zza);
+        interfaceC2337b.registerEncoder(zzjf.class, zzfn.zza);
+        interfaceC2337b.registerEncoder(zzje.class, zzfm.zza);
+        interfaceC2337b.registerEncoder(zzjg.class, zzfo.zza);
+        interfaceC2337b.registerEncoder(zzjh.class, zzfp.zza);
+        interfaceC2337b.registerEncoder(zzji.class, zzfq.zza);
+        interfaceC2337b.registerEncoder(zzjj.class, zzfr.zza);
+        interfaceC2337b.registerEncoder(zzjk.class, zzfs.zza);
+        interfaceC2337b.registerEncoder(zzec.class, zzfc.zza);
+        interfaceC2337b.registerEncoder(zzee.class, zzfe.zza);
+        interfaceC2337b.registerEncoder(zzed.class, zzfd.zza);
+        interfaceC2337b.registerEncoder(zzkn.class, zzgm.zza);
+        interfaceC2337b.registerEncoder(zzjs.class, zzga.zza);
+        interfaceC2337b.registerEncoder(zzdd.class, zzeg.zza);
+        interfaceC2337b.registerEncoder(zzdc.class, zzeh.zza);
+        interfaceC2337b.registerEncoder(zzjv.class, zzgc.zza);
+        interfaceC2337b.registerEncoder(zzdf.class, zzei.zza);
+        interfaceC2337b.registerEncoder(zzde.class, zzej.zza);
+        interfaceC2337b.registerEncoder(zzdp.class, zzeo.zza);
+        interfaceC2337b.registerEncoder(zzdn.class, zzep.zza);
+        interfaceC2337b.registerEncoder(zzdh.class, zzek.zza);
+        interfaceC2337b.registerEncoder(zzdg.class, zzel.zza);
+        interfaceC2337b.registerEncoder(zzdr.class, zzeq.zza);
+        interfaceC2337b.registerEncoder(zzdq.class, zzer.zza);
+        interfaceC2337b.registerEncoder(zzdt.class, zzes.zza);
+        interfaceC2337b.registerEncoder(zzds.class, zzet.zza);
+        interfaceC2337b.registerEncoder(zzeb.class, zzfa.zza);
+        interfaceC2337b.registerEncoder(zzea.class, zzfb.zza);
+        interfaceC2337b.registerEncoder(zzdv.class, zzeu.zza);
+        interfaceC2337b.registerEncoder(zzdu.class, zzev.zza);
+        interfaceC2337b.registerEncoder(zzdx.class, zzew.zza);
+        interfaceC2337b.registerEncoder(zzdw.class, zzex.zza);
+        interfaceC2337b.registerEncoder(zznh.class, zzik.zza);
+        interfaceC2337b.registerEncoder(zzna.class, zzgb.zza);
+        interfaceC2337b.registerEncoder(zzne.class, zzgy.zza);
+        interfaceC2337b.registerEncoder(zznd.class, zzgx.zza);
+        interfaceC2337b.registerEncoder(zznb.class, zzgg.zza);
+        interfaceC2337b.registerEncoder(zzng.class, zzij.zza);
+        interfaceC2337b.registerEncoder(zznf.class, zzii.zza);
+        interfaceC2337b.registerEncoder(zzni.class, zzil.zza);
+        interfaceC2337b.registerEncoder(zznc.class, zzgk.zza);
+        interfaceC2337b.registerEncoder(zznl.class, zziv.zza);
+        interfaceC2337b.registerEncoder(zznk.class, zziw.zza);
+        interfaceC2337b.registerEncoder(zznj.class, zziu.zza);
+        interfaceC2337b.registerEncoder(zzmq.class, zzim.zza);
+        interfaceC2337b.registerEncoder(zzkm.class, zzgl.zza);
+        interfaceC2337b.registerEncoder(zzkq.class, zzgp.zza);
+        interfaceC2337b.registerEncoder(zziz.class, zzfh.zza);
+        interfaceC2337b.registerEncoder(zzki.class, zzgi.zza);
+        interfaceC2337b.registerEncoder(zzko.class, zzgn.zza);
+        interfaceC2337b.registerEncoder(zzjw.class, zzgd.zza);
+        interfaceC2337b.registerEncoder(zzlc.class, zzgw.zza);
+        interfaceC2337b.registerEncoder(zzlb.class, zzgv.zza);
+        interfaceC2337b.registerEncoder(zzdb.class, zzef.zza);
+        interfaceC2337b.registerEncoder(zzmw.class, zziq.zza);
+        interfaceC2337b.registerEncoder(zzmy.class, zzis.zza);
+        interfaceC2337b.registerEncoder(zzmx.class, zzir.zza);
+        interfaceC2337b.registerEncoder(zziy.class, zzff.zza);
+        interfaceC2337b.registerEncoder(zzjn.class, zzfv.zza);
+        interfaceC2337b.registerEncoder(zzjm.class, zzfu.zza);
+        interfaceC2337b.registerEncoder(zzjl.class, zzft.zza);
+        interfaceC2337b.registerEncoder(zzlg.class, zzhc.zza);
+        interfaceC2337b.registerEncoder(zzli.class, zzhe.zza);
+        interfaceC2337b.registerEncoder(zzlh.class, zzhd.zza);
+        interfaceC2337b.registerEncoder(zzdj.class, zzem.zza);
+        interfaceC2337b.registerEncoder(zzdi.class, zzen.zza);
+        interfaceC2337b.registerEncoder(zzmf.class, zzhx.zza);
+        interfaceC2337b.registerEncoder(zzmi.class, zzia.zza);
+        interfaceC2337b.registerEncoder(zzmg.class, zzhy.zza);
+        interfaceC2337b.registerEncoder(zzmh.class, zzhz.zza);
+        interfaceC2337b.registerEncoder(zzdz.class, zzey.zza);
+        interfaceC2337b.registerEncoder(zzdy.class, zzez.zza);
+        interfaceC2337b.registerEncoder(zzms.class, zzio.zza);
+        interfaceC2337b.registerEncoder(zzmr.class, zzin.zza);
+    }
+}

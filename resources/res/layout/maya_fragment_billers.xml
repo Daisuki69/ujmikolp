@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liaoinstan.springview.widget.SpringView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spring_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarThumbVertical="@drawable/maya_bg_scrollbar_grey_quaternary"
+        android:id="@+id/billers_recycler_view"
+        android:background="?attr/mayaColorBackgroundPrimary"
+        android:paddingTop="@dimen/maya_margin_large"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.liaoinstan.springview.widget.SpringView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_text"
+    android:background="@drawable/maya_bg_content_border"
+    android:paddingLeft="@dimen/maya_padding_normal"
+    android:paddingTop="@dimen/maya_padding_18dp"
+    android:paddingRight="@dimen/maya_padding_normal"
+    android:paddingBottom="@dimen/maya_padding_18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/maya_margin_medium"
+    android:layout_marginEnd="@dimen/maya_padding_medium"
+    android:paddingHorizontal="@dimen/maya_padding_normal"
+    android:paddingVertical="@dimen/maya_padding_18dp"
+    style="@style/JekoSemiBoldTextBody.Primary"/>

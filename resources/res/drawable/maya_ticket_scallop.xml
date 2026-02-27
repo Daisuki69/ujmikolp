@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:height="32dp"
+                android:width="16dp"/>
+            <corners
+                android:topLeftRadius="40dp"
+                android:bottomLeftRadius="40dp"/>
+            <solid android:color="@color/transparent"/>
+            <stroke
+                android:width="@dimen/pma_stroke_width_normal"
+                android:color="?attr/mayaContentViewBorderColor"/>
+        </shape>
+    </item>
+    <item android:right="-15dp">
+        <rotate android:fromDegrees="90">
+            <shape android:shape="line">
+                <size
+                    android:height="0dp"
+                    android:width="1dp"/>
+                <solid android:color="?attr/mayaColorBackgroundPrimary"/>
+                <stroke
+                    android:width="@dimen/maya_stroke_width_small"
+                    android:color="?attr/mayaColorBackgroundPrimary"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

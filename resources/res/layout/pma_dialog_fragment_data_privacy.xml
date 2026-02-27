@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/pma_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/pma_text_size_title2"
+        android:textStyle="bold"
+        android:textColor="@color/pma_success_dialog_text_title"
+        android:id="@+id/pma_dialog_fragment_data_privacy_text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pma_margin_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pma_margin_normal"
+        android:text="@string/pma_label_we_have_updated_our_data_privacy_policy_and_terms_of_service"
+        style="@style/pma_theme_home_text_view"/>
+    <TextView
+        android:textColor="@color/pma_theme_login_primary"
+        android:layout_gravity="right"
+        android:id="@+id/pma_dialog_fragment_data_privacy_text_view_view_terms_and_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pma_label_view_terms_and_conditions"
+        style="@style/pma_widget_dialog_button"/>
+</dOYHB6.lN8Dz0.d8NVX3>

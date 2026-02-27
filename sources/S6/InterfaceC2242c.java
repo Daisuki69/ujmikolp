@@ -1,0 +1,8 @@
+package s6;
+
+import y5.s;
+
+/* JADX INFO: renamed from: s6.c, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes4.dex */
+public interface InterfaceC2242c extends s {
+}

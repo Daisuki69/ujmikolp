@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="?attr/mayaColorIconTint"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#000"
+        android:pathData="M10.991,3.883 L9.122,2.157 10.48,0.688l3.654,3.374a1,1 0,0 1,0.057 1.413L10.816,9.13l-1.47,-1.356 1.743,-1.888a7.488,7.488 0,1 0,8.396 7.272,1 1,0 1,1 2,-0.042A9.487,9.487 0,1 1,10.99 3.883z"/>
+</vector>

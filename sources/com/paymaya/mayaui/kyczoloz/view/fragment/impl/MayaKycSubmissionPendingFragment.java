@@ -1,0 +1,120 @@
+package com.paymaya.mayaui.kyczoloz.view.fragment.impl;
+
+import Ae.a;
+import D.N;
+import H8.b;
+import K8.I;
+import Lh.c;
+import M8.C0332a;
+import M8.C0399q2;
+import M8.L;
+import M8.T2;
+import N5.C0478s0;
+import android.os.Bundle;
+import android.view.View;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.KeyEventDispatcher;
+import com.paymaya.R;
+import com.paymaya.common.utility.C1220i;
+import com.paymaya.common.utility.e0;
+import com.paymaya.mayaui.kyczoloz.view.activity.impl.MayaKycActivity;
+import com.paymaya.mayaui.kyczoloz.view.fragment.base.MayaKycBaseFragment;
+import kotlin.jvm.internal.j;
+import y5.q;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class MayaKycSubmissionPendingFragment extends MayaKycBaseFragment<C0478s0> implements I {
+
+    /* JADX INFO: renamed from: W, reason: collision with root package name */
+    public a f12621W;
+
+    /* JADX INFO: renamed from: X, reason: collision with root package name */
+    public e0 f12622X;
+
+    /* JADX INFO: renamed from: Y, reason: collision with root package name */
+    public final N f12623Y;
+
+    public MayaKycSubmissionPendingFragment() {
+        super(C0399q2.f3357a);
+        this.f12623Y = new N(this, 26);
+    }
+
+    @Override // com.paymaya.mayaui.kyczoloz.view.fragment.base.MayaKycBaseFragment, L8.c
+    public final boolean D() {
+        KeyEventDispatcher.Component componentRequireActivity = requireActivity();
+        j.e(componentRequireActivity, "null cannot be cast to non-null type com.paymaya.mayaui.kyczoloz.view.activity.IMayaKycActivityView");
+        return ((MayaKycActivity) ((b) componentRequireActivity)).e2();
+    }
+
+    public final a K1() {
+        a aVar = this.f12621W;
+        if (aVar != null) {
+            return aVar;
+        }
+        j.n("mSubmissionPendingFragmentPresenter");
+        throw null;
+    }
+
+    @Override // com.paymaya.common.base.MayaBaseFragment, androidx.fragment.app.Fragment
+    public final void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        this.f10338R = true;
+        c cVarF = W4.a.e().f();
+        O5.a aVar = (O5.a) cVarF.c;
+        this.f10334B = (C1220i) aVar.f4716g.get();
+        this.f10335K = (com.paymaya.data.preference.a) aVar.e.get();
+        this.f10336P = (S5.c) aVar.f4724k.get();
+        ((Kh.I) cVarF.f2990b).getClass();
+        this.f12621W = new a(17);
+        this.f12622X = (e0) aVar.f4685S.get();
+        K1().h(this);
+    }
+
+    @Override // com.paymaya.common.base.MayaBaseFragment, androidx.fragment.app.Fragment
+    public final void onDestroy() {
+        K1().i();
+        super.onDestroy();
+    }
+
+    @Override // com.paymaya.common.base.MayaBaseBindingFragment, com.paymaya.common.base.MayaBaseFragment, androidx.fragment.app.Fragment
+    public final void onDestroyView() {
+        this.f12623Y.remove();
+        super.onDestroyView();
+    }
+
+    @Override // com.paymaya.common.base.MayaBaseFragment, androidx.fragment.app.Fragment
+    public final void onResume() {
+        super.onResume();
+        T2.H(this, null, 3);
+    }
+
+    @Override // com.paymaya.common.base.MayaBaseFragment, androidx.fragment.app.Fragment
+    public final void onViewCreated(View view, Bundle bundle) {
+        j.g(view, "view");
+        super.onViewCreated(view, bundle);
+        requireActivity().getOnBackPressedDispatcher().addCallback(this.f12623Y);
+        Object objRequireActivity = requireActivity();
+        j.e(objRequireActivity, "null cannot be cast to non-null type com.paymaya.mayaui.kyczoloz.view.activity.IMayaKycActivityView");
+        Object obj = (b) objRequireActivity;
+        MayaKycActivity mayaKycActivity = (MayaKycActivity) obj;
+        mayaKycActivity.t2();
+        e0 e0Var = this.f12622X;
+        if (e0Var == null) {
+            j.n("resourceManager");
+            throw null;
+        }
+        mayaKycActivity.r2(ContextCompat.getColor(e0Var.f10905a, R.color.ghost_white));
+        e0 e0Var2 = this.f12622X;
+        if (e0Var2 == null) {
+            j.n("resourceManager");
+            throw null;
+        }
+        ((q) obj).N1(ContextCompat.getColor(e0Var2.f10905a, R.color.ghost_white));
+        mayaKycActivity.p2(new L(this, 12));
+        mayaKycActivity.t1();
+        mayaKycActivity.s1();
+        mayaKycActivity.r1();
+        K1().j();
+        Ke.b.b(((C0478s0) G1()).f4204b.c, new C0332a(this, 9));
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_bg_solid_round_opacity_blue_40"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_view_credit_enhanced_ineligible_header_image"
+        android:layout_width="@dimen/maya_credit_ineligible_fullscreen_header_image_width"
+        android:layout_height="@dimen/maya_credit_ineligible_fullscreen_header_image_height"
+        android:layout_marginTop="@dimen/maya_margin_20"
+        android:src="0x7f0802db"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/text_view_credit_enhanced_ineligible_header_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/maya_margin_normal"
+        android:layout_marginTop="@dimen/maya_margin_medium"
+        android:layout_marginRight="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_credit_enhanced_ineligible_header_title"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/maya_margin_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_credit_enhanced_ineligible_header_image"
+        style="@style/JekoSemiBoldH5.Primary"/>
+    <TextView
+        android:id="@+id/text_view_credit_enhanced_ineligible_header_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/maya_margin_normal"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_credit_enhanced_ineligible_header_description"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_credit_enhanced_ineligible_header_title"
+        style="@style/CerebriBookSmallText.Secondary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

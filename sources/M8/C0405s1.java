@@ -1,0 +1,76 @@
+package M8;
+
+import android.os.Bundle;
+import androidx.navigation.NavDirections;
+import com.paymaya.R;
+import d4.AbstractC1331a;
+import java.util.HashMap;
+
+/* JADX INFO: renamed from: M8.s1, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes4.dex */
+public final class C0405s1 implements NavDirections {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final HashMap f3366a = new HashMap();
+
+    public final String a() {
+        return (String) this.f3366a.get("captureMethod");
+    }
+
+    public final String b() {
+        return (String) this.f3366a.get("documentType");
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || C0405s1.class != obj.getClass()) {
+            return false;
+        }
+        C0405s1 c0405s1 = (C0405s1) obj;
+        HashMap map = this.f3366a;
+        boolean zContainsKey = map.containsKey("captureMethod");
+        HashMap map2 = c0405s1.f3366a;
+        if (zContainsKey != map2.containsKey("captureMethod")) {
+            return false;
+        }
+        if (a() == null ? c0405s1.a() != null : !a().equals(c0405s1.a())) {
+            return false;
+        }
+        if (map.containsKey("documentType") != map2.containsKey("documentType")) {
+            return false;
+        }
+        return b() == null ? c0405s1.b() == null : b().equals(c0405s1.b());
+    }
+
+    @Override // androidx.navigation.NavDirections
+    public final int getActionId() {
+        return R.id.action_maya_kyc_liveness_capture_fragment_to_maya_kyc_complete_personal_information_fragment;
+    }
+
+    @Override // androidx.navigation.NavDirections
+    public final Bundle getArguments() {
+        Bundle bundle = new Bundle();
+        HashMap map = this.f3366a;
+        if (map.containsKey("captureMethod")) {
+            bundle.putString("captureMethod", (String) map.get("captureMethod"));
+        } else {
+            bundle.putString("captureMethod", "");
+        }
+        if (map.containsKey("documentType")) {
+            bundle.putString("documentType", (String) map.get("documentType"));
+            return bundle;
+        }
+        bundle.putString("documentType", "");
+        return bundle;
+    }
+
+    public final int hashCode() {
+        return AbstractC1331a.k(((a() != null ? a().hashCode() : 0) + 31) * 31, b() != null ? b().hashCode() : 0, 31, R.id.action_maya_kyc_liveness_capture_fragment_to_maya_kyc_complete_personal_information_fragment);
+    }
+
+    public final String toString() {
+        return "ActionMayaKycLivenessCaptureFragmentToMayaKycCompletePersonalInformationFragment(actionId=2131361973){captureMethod=" + a() + ", documentType=" + b() + "}";
+    }
+}

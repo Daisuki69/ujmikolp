@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_inbox_flutter_icon"
+    android:layout_width="@dimen/maya_inbox_flutter_layout_width"
+    android:layout_height="@dimen/maya_inbox_flutter_layout_height">
+    <ImageView
+        android:layout_width="@dimen/maya_inbox_flutter_icon_width"
+        android:layout_height="@dimen/maya_inbox_flutter_icon_height"
+        android:layout_marginBottom="@dimen/maya_margin_2x_small"
+        android:src="@drawable/maya_ic_bell_stroke_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_inbox_flutter_count"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/maya_inbox_flutter_icon_count_height"
+        app:cardBackgroundColor="@color/maya_shades_of_grey_1"
+        app:cardCornerRadius="@dimen/maya_radius_16dp"
+        app:cardElevation="@dimen/maya_inbox_flutter_icon_count_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="center"
+            android:id="@+id/text_view_inbox_flutter_count"
+            android:paddingTop="@dimen/maya_padding_1dp"
+            android:paddingBottom="@dimen/maya_padding_1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/maya_margin_2x_small"
+            android:layout_marginTop="@dimen/maya_margin_2x_small"
+            android:layout_marginRight="@dimen/maya_margin_2x_small"
+            android:layout_marginBottom="@dimen/maya_margin_2x_small"
+            android:minWidth="@dimen/maya_inbox_flutter_icon_count_min_width"
+            android:fontFamily="@font/font_family_jeko_semi_bold"
+            android:paddingStart="@dimen/maya_padding_5dp"
+            android:paddingEnd="@dimen/maya_padding_5dp"
+            android:lineHeight="@dimen/maya_line_height_16sp"
+            style="@style/MayaBadge"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

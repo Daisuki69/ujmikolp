@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_constraint_layout_pma_view_loading_fullscreen_please_wait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progress_bar_pma_view_loading"
+        android:layout_width="@dimen/pma_progressbar_size_normal"
+        android:layout_height="@dimen/pma_progressbar_size_normal"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/pma_drawable_progress_bar_thick_primary"
+        app:layout_constraintBottom_toTopOf="@+id/primary_message_text_view_pma_view_loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/primary_message_text_view_pma_view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_40dp"
+        android:text="@string/pma_progress_message_please_wait2"
+        app:layout_constraintBottom_toTopOf="@+id/secondary_message_text_view_pma_view_loading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_pma_view_loading"
+        style="@style/Heading02StandardGray200"/>
+    <TextView
+        android:id="@+id/secondary_message_text_view_pma_view_loading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primary_message_text_view_pma_view_loading"
+        style="@style/BodyMediumStandardGray160"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/maya_padding_normal"
+    android:paddingTop="@dimen/maya_padding_small"
+    android:paddingBottom="@dimen/maya_padding_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/maya_padding_small">
+    <ImageView
+        android:id="@+id/image_view_icon"
+        android:layout_width="@dimen/maya_kyc_photo_tip_view_holder_picture_size"
+        android:layout_height="@dimen/maya_kyc_photo_tip_view_holder_picture_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text_view_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="8"
+        android:layout_marginStart="@dimen/maya_margin_normal"
+        android:layout_marginEnd="@dimen/maya_margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/CerebriBookLongRead.Secondary200"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

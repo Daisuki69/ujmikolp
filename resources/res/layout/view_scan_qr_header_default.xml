@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/maya_primary_white"
+        android:id="@+id/text_view_scan_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_label_qr_code"
+        app:fontFamily="@font/font_family_jeko_bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_scan_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="0dp"
+        style="@style/JekoBoldTextBody"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/maya_system_error"
+        android:id="@+id/text_view_scan_error"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_please_scan_another_code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_scan_header"
+        style="@style/JekoBoldTextBody"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

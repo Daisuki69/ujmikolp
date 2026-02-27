@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+    <dOYHB6.lN8Dz0.d8NVX3
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_index_list_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_view_index_popup"
+        android:background="@drawable/maya_bg_index_scroller_popup_light"
+        android:paddingRight="@dimen/maya_section_index_scroller_popup_right_padding"
+        android:visibility="gone"
+        android:layout_width="@dimen/maya_section_index_scroller_popup_width"
+        android:layout_height="@dimen/maya_section_index_scroller_popup_height"
+        android:layout_marginLeft="@dimen/maya_section_index_scroller_popup_index_container_offset"
+        android:layout_marginStart="@dimen/maya_section_index_scroller_popup_index_container_offset"
+        android:backgroundTint="@color/maya_opacity_dark_mode_primary_80"
+        app:layout_constraintLeft_toLeftOf="@+id/linear_layout_index_list_container"
+        app:layout_constraintTop_toTopOf="@+id/linear_layout_index_list_container"
+        style="@style/JekoBoldH5.MainSecondary"/>
+</merge>

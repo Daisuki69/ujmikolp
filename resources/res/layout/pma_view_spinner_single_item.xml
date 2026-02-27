@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/pma_view_spinner_single_item_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?attr/singleChoiceAdapterItemStyle">
+    <TextView
+        android:id="@+id/pma_view_spinner_single_item_text_view_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pma_margin_normal"
+        android:layout_marginTop="@dimen/pma_margin_normal"
+        android:layout_marginRight="@dimen/pma_margin_normal"
+        android:layout_marginBottom="@dimen/pma_margin_normal"/>
+</dOYHB6.lN8Dz0.d8NVX3>

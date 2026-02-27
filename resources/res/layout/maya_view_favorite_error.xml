@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_container"
+    android:background="@drawable/maya_bg_content_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_view_favorites_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_that_didnt_load_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoBoldTextBody.Primary"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_view_favorites_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="@string/maya_label_connection_issue_split"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_favorites_error_title"
+        style="@style/JekoBoldSmallText.Tertiary"/>
+    <Button
+        android:id="@+id/button_favorites_retry"
+        android:layout_width="@dimen/maya_view_favorite_error_button_width"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        android:text="@string/maya_label_try_again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_favorites_subtitle"
+        style="@style/MayaButtonPrimarySmall"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout_transaction_details_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view_divider_dynamic_fields"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/maya_margin_normal"
+        android:layout_marginRight="@dimen/maya_margin_normal"
+        android:layout_marginHorizontal="@dimen/maya_margin_normal"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MayaListItemDivider"/>
+    <com.paymaya.mayaui.common.view.widget.inforeviewlist.MayaReviewInfoRecyclerView
+        android:id="@+id/maya_review_info_recycler_view_dynamic_fields"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_divider_dynamic_fields"/>
+    <View
+        android:id="@+id/view_divider_biller_reference_number"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/maya_margin_normal"
+        android:layout_marginRight="@dimen/maya_margin_normal"
+        android:layout_marginHorizontal="@dimen/maya_margin_normal"
+        app:layout_constraintTop_toBottomOf="@+id/maya_review_info_recycler_view_dynamic_fields"
+        style="@style/MayaListItemDivider"/>
+    <com.paymaya.mayaui.common.view.widget.inforeviewlist.item.MayaLabelValueReviewInfoItem
+        android:id="@+id/maya_label_review_info_item_biller_reference_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider_biller_reference_number"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maya_kyc_face_authentication_flow"
+    app:startDestination="@+id/maya_kyc_face_authentication_tips_fragment">
+    <fragment
+        android:label="@string/maya_fragment_kyc_take_video_selfie_screen_label"
+        android:name="com.paymaya.mayaui.kyczoloz.view.fragment.impl.MayaKycFaceAuthenticationTipsFragment"
+        android:id="@+id/maya_kyc_face_authentication_tips_fragment">
+        <action
+            android:id="@+id/action_maya_kyc_face_authentication_tips_fragment_to_maya_kyc_work_details_flow"
+            app:destination="@+id/maya_kyc_work_details_flow"/>
+        <action
+            android:id="@+id/action_maya_kyc_face_authentication_tips_fragment_to_maya_kyc_error_dialog_fragment"
+            app:destination="@+id/maya_kyc_error_dialog_fragment"/>
+        <action
+            android:id="@+id/action_maya_kyc_face_authentication_tips_fragment_to_maya_kyc_bottom_sheets_flow"
+            app:destination="@+id/maya_kyc_bottom_sheets_flow">
+            <argument
+                android:name="destinationScreenName"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
+        <action
+            android:id="@+id/action_maya_kyc_face_authentication_tips_fragment_to_maya_kyc_liveness_capture_fragment"
+            app:destination="@+id/maya_kyc_liveness_capture_fragment">
+            <argument
+                android:name="isOnIdLessFlow"
+                app:argType="boolean"/>
+        </action>
+    </fragment>
+</navigation>

@@ -1,0 +1,21 @@
+{
+    "frequency": ["WEEKLY", "BIWEEKLY", "MONTHLY"],
+    "allowed_days_of_month" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+    "minimum_balance": 1.00,
+    "days_of_week": ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"],
+    "hours_of_day": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+    "sources": {
+      "REGULAR_SAVINGS_CONSUMER_DEPOSIT": {
+        "minimum_cash_in_amount": 1.00,
+        "maximum_cash_in_amount": 50000.00
+      },
+       "mayabank": {
+           "minimum_cash_in_amount": 1.0,
+           "maximum_cash_in_amount": 50000.0
+       }
+    },
+    "defaults": {
+        "minimum_cash_in_amount": 1000.00,
+        "maximum_cash_in_amount": 10000.00
+      }
+}

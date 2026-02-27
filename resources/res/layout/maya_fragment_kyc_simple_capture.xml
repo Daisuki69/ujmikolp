@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.yf3D09 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/layout_camera"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_fragment_kyc_simple_capture_camera"/>
+    <include
+        android:id="@+id/layout_camera_permission"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/maya_fragment_kyc_zoloz_camera_permission"/>
+</dOYHB6.lN8Dz0.yf3D09>

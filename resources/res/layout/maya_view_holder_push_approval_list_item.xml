@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/maya_bg_content_border_card_light"
+    android:padding="@dimen/maya_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/maya_margin_small"
+    android:layout_marginBottom="@dimen/maya_margin_small"
+    android:layout_marginVertical="@dimen/maya_margin_small">
+    <TextView
+        android:id="@+id/text_view_approve_request_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/JekoBoldH5.Primary"/>
+    <TextView
+        android:id="@+id/text_view_approve_request_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_extra_small"
+        style="@style/JekoSemiBoldLongRead.Tertiary"/>
+</dOYHB6.lN8Dz0.d8NVX3>

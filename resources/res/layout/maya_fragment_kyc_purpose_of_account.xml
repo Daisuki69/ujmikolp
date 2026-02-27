@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ghost_white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:scrollbarThumbVertical="@drawable/maya_bg_scrollbar_grey_quaternary"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/nested_scroll_view_form_container"
+        android:paddingLeft="@dimen/maya_margin_large"
+        android:paddingRight="@dimen/maya_margin_large"
+        android:scrollbars="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        android:overScrollMode="never"
+        android:paddingHorizontal="@dimen/maya_margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <dOYHB6.lN8Dz0.d8NVX3
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/layout_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/maya_bottom_button_navigation"/>
+        </dOYHB6.lN8Dz0.d8NVX3>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/mayaContentBorderCard"
+    android:paddingBottom="@dimen/maya_padding_14dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/maya_shop_provider_loading_icon_image_view"
+        android:layout_width="@dimen/maya_shop_provider_loading_icon_image_view_width"
+        android:layout_height="@dimen/maya_shop_provider_loading_icon_image_view_height"
+        android:layout_margin="@dimen/maya_margin_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/maya_view_shimmer_rounded"/>
+    <View
+        android:id="@+id/maya_shop_provider_loading_divider"
+        android:background="?attr/mayaColorDividerBackgroundPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_elevation_1dp"
+        android:layout_marginLeft="@dimen/maya_margin_10"
+        android:layout_marginTop="@dimen/maya_margin_10"
+        android:layout_marginRight="@dimen/maya_margin_10"
+        android:layout_marginBottom="@dimen/maya_margin_normal"
+        android:layout_marginHorizontal="@dimen/maya_margin_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maya_shop_provider_loading_icon_image_view"/>
+    <include
+        android:id="@+id/maya_shop_provider_loading_text_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/maya_shop_provider_loading_text_view_height"
+        android:layout_marginLeft="@dimen/maya_margin_30"
+        android:layout_marginTop="@dimen/maya_margin_10"
+        android:layout_marginRight="@dimen/maya_margin_30"
+        android:layout_marginHorizontal="@dimen/maya_margin_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maya_shop_provider_loading_divider"
+        layout="@layout/maya_view_shimmer_rounded"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

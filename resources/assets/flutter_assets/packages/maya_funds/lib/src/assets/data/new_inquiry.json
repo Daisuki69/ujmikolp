@@ -1,0 +1,163 @@
+{
+    "success": true,
+    "code": "DB000",
+    "msg": "",
+    "data": {
+        "personalInfo": {
+            "eligible": true,
+            "name": {
+                "verificationStatus": "PASSED",
+                "firstName": "Crisostomo",
+                "middleName": null,
+                "lastName": "Ibarra"
+            },
+            "contacts": [
+                {
+                    "verificationStatus": "PASSED",
+                    "type": "MSISDN",
+                    "subtype": "PRIMARY",
+                    "value": "+639000011015"
+                },
+                {
+                    "verificationStatus": "PASSED",
+                    "type": "EMAIL",
+                    "subtype": "RECOVERY",
+                    "value": "lloyd.david@paymaya.com"
+                }
+            ],
+            "birthDetails": {
+                "verificationStatus": "PASSED",
+                "birthDate": "01-01-1984",
+                "country": "PH",
+                "nationality": "PH",
+                "city": "Manila"
+            }
+        },
+        "dashboardDetails": {
+            "customerSummary": {
+                "riskProfile": "Moderately Conservative",
+                "totalInvestmentCost": "772.00",
+                "totalMarketValue": "161215.70",
+                "totalGainLoss": "0.000029"
+            },
+            "fundProductList": [
+                {
+                    "fundProductCode": "MAYA-MM",
+                    "fundProductName": "ATRAM Money Market Fund",
+                    "price": 87.220745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 70.45,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Conservative",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-AMMF",
+                    "fundProductName": "ALFM Money Market Fund",
+                    "price": 75.220745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 6.70,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ALFM.jpg",
+                    "fundRiskProfile": "Conservative",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-TRPF",
+                    "fundProductName": "ATRAM Total Return Peso Bond Fund",
+                    "price": 400.128090,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 2.67,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Moderate",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-GEOFF",
+                    "fundProductName": "ATRAM Global Equity Opportunity Feeder Fund",
+                    "price": 204.950745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 68.46,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Aggressive",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-GIEFF",
+                    "fundProductName": "ATRAM Global Infra Equity Feeder Fund",
+                    "price": 300.520745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 1.38,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Moderately Aggressive",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-GHCFF",
+                    "fundProductName": "ATRAM Global Health Care Feeder Fund",
+                    "price": 132.450745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 0.00,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Moderately Aggressive",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-PSDGF",
+                    "fundProductName": "ATRAM Philippine SDG Fund",
+                    "price": 101.090745,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 0.00,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ATRAM.jpg",
+                    "fundRiskProfile": "Aggressive",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                },
+                {
+                    "fundProductCode": "MAYA-PSIF",
+                    "fundProductName": "Philippine Stock Index Fund",
+                    "price": 114.855743,
+                    "priceDate": "2022-12-19",
+                    "perfOneyear": 0.00,
+                    "fundProductLogo": "https://seedbox-paymaya-public-doc-list-dev.s3.ap-southeast-1.amazonaws.com/logos/ALFM.jpg",
+                    "fundRiskProfile": "Aggressive",
+                    "recommended": false,
+                    "investmentManager": "ATRAM"
+                }
+            ],
+            "investmentDetails": [
+                {
+                    "customerId": "ca3a434d-6657-42db-ae98-f00d2a35d3f5",
+                    "investmentAccountId": "ab2ed631-75f0-4b84-a295-13e0fb1e7cc1",
+                    "navDate": "2022-04-02",
+                    "navValue": "75.220745",
+                    "marketValue": "11889.014850975",
+                    "unit": "158.055",
+                    "productName": "ALFM Money Market Fund",
+                    "productCode": "MAYA-AMMF",
+                    "investAmount": "351.0",
+                    "riskProfile": "Conservative",
+                    "unrealizePl": "0.0"
+                },
+                {
+                    "customerId": "ca3a434d-6657-42db-ae98-f00d2a35d3f5",
+                    "investmentAccountId": "b0edb846-8658-4493-a6ab-d1ea38690db6",
+                    "navDate": "2022-04-02",
+                    "navValue": "400.128090",
+                    "marketValue": "149326.6828293480",
+                    "unit": "373.1972",
+                    "productName": "ATRAM Total Return Peso Bond Fund",
+                    "productCode": "MAYA-TRPF",
+                    "investAmount": "421.0",
+                    "riskProfile": "Moderate",
+                    "unrealizePl": "2.9E-5"
+                }
+            ]
+        }
+    }
+}

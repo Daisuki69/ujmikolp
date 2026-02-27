@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/maya_margin_normal"
+        android:right="@dimen/maya_margin_normal">
+        <shape>
+            <size android:height="@dimen/maya_height_divider_normal"/>
+            <solid android:color="?attr/mayaColorDividerBackgroundPrimary"/>
+        </shape>
+    </item>
+</layer-list>

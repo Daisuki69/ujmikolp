@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/text_view_toast"
+    android:background="@drawable/maya_bg_toast"
+    android:paddingLeft="@dimen/maya_padding_20dp"
+    android:paddingTop="@dimen/maya_padding_medium"
+    android:paddingRight="@dimen/maya_padding_20dp"
+    android:paddingBottom="@dimen/maya_padding_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/maya_padding_20dp"
+    android:paddingVertical="@dimen/maya_padding_medium"
+    style="@style/JekoBoldSmallText.PrimaryNegative"/>

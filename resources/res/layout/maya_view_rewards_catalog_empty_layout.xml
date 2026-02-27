@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_constraint_layout"
+    android:background="@drawable/maya_bg_content_borderless_ghost_white"
+    android:paddingLeft="@dimen/maya_padding_medium"
+    android:paddingRight="@dimen/maya_padding_medium"
+    android:paddingBottom="@dimen/maya_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/maya_padding_medium">
+    <ImageView
+        android:id="@+id/empty_emoji_image_view"
+        android:layout_width="@dimen/maya_emoji_width"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maya_ic_sunglasses_smiley"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/empty_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_negative_margin_8"
+        android:text="@string/maya_label_rewards_catalog_empty_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_emoji_image_view"
+        style="@style/CerebriMediumLongRead"/>
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/empty_message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_2x_small"
+        android:text="@string/maya_label_rewards_catalog_empty_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_title_text_view"
+        style="@style/CerebriBookSmallText.Secondary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

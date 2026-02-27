@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/maya_bg_shop_history_first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/maya_margin_small">
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text_view_date_pma_view_date_header_view_all"
+        android:paddingLeft="@dimen/pma_padding_normal"
+        android:paddingTop="@dimen/pma_padding_normal"
+        android:paddingRight="@dimen/pma_padding_normal"
+        android:paddingBottom="@dimen/pma_padding_normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/JekoOverlineBig.Tertiary"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/shop_history_price_sum_text_view"
+        android:paddingLeft="@dimen/pma_padding_normal"
+        android:paddingTop="@dimen/pma_padding_normal"
+        android:paddingRight="@dimen/pma_padding_normal"
+        android:paddingBottom="@dimen/pma_padding_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/JekoOverlineBig.Tertiary"/>
+</dOYHB6.lN8Dz0.d8NVX3>

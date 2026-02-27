@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_constraint_layout_pma_view_shop_v3_home_section_gam_carousel"
+    android:paddingTop="@dimen/maya_padding_normal"
+    android:paddingBottom="@dimen/maya_padding_extra_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.paymaya.adkit.presentation.banneradcarousel.view.BannerAdCarousel
+        android:id="@+id/shop_home_section_ad_banner"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

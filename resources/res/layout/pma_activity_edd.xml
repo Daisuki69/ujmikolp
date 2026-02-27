@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_pma_activity_edd"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pma_view_toolbar"
+        android:background="@color/light_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="@dimen/pma_padding_0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/pma_theme_toolbar_white"
+        app:titleTextAppearance="@style/BodyDark"/>
+    <com.paymaya.ui.travel.view.widget.StepProgressBar
+        android:id="@+id/step_progress_bar_pma_activity_edd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pma_margin_normal"
+        app:initialStep="0"
+        app:layout_constraintTop_toBottomOf="@+id/pma_view_toolbar"
+        app:progressColor="@color/nice_blue"
+        app:remainingColor="@color/gainsboro_gray"
+        app:steps="5"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_pma_activity_edd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_progress_bar_pma_activity_edd"/>
+    <dOYHB6.lN8Dz0.yf3D09
+        android:id="@+id/fragment_container_frame_layout_pma_activity_edd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pma_view_toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

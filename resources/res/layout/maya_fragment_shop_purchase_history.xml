@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_pma_fragment_shop_v3_purchase_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/maya_margin_large"
+        android:layout_marginRight="@dimen/maya_margin_large"
+        android:layout_marginHorizontal="@dimen/maya_margin_large"
+        style="@style/MayaSegmentsLayout"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container_view_pager_pma_fragment_shop_v3_purchase_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</dOYHB6.lN8Dz0.d8NVX3>

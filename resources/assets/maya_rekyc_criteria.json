@@ -1,0 +1,222 @@
+{
+  "data": {
+    "id": 1,
+    "prompt_guides": [
+      {
+        "id": 3,
+        "action": {
+          "id": 3,
+          "code": "UI_BLOCK_FOR_SUBMISSION"
+        },
+        "criteria": {
+          "id": 3,
+          "affected_reasons": [
+            {
+              "id": 5,
+              "reason": "No_ID"
+            },
+            {
+              "id": 6,
+              "reason": "No_Risk_Rating"
+            },
+            {
+              "id": 7,
+              "reason": "Risk_high"
+            }
+          ],
+          "affected_statuses": [
+            {
+              "id": 4,
+              "status": "tagged"
+            },
+            {
+              "id": 5,
+              "status": "rejected"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "action": {
+          "id": 4,
+          "code": "UI_BLOCK_FOR_REVIEW"
+        },
+        "criteria": {
+          "id": 4,
+          "affected_reasons": [
+            {
+              "id": 8,
+              "reason": "No_ID"
+            },
+            {
+              "id": 9,
+              "reason": "No_Risk_Rating"
+            },
+            {
+              "id": 10,
+              "reason": "Risk_high"
+            }
+          ],
+          "affected_statuses": [
+            {
+              "id": 6,
+              "status": "submitted"
+            }
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "action": {
+          "id": 6,
+          "code": "UI_NUDGE_FOR_SUBMISSION"
+        },
+        "criteria": {
+          "id": 6,
+          "affected_reasons": [
+            {
+              "id": 15,
+              "reason": "Risk_med"
+            },
+            {
+              "id": 16,
+              "reason": "Risk_low"
+            },
+            {
+              "id": 19,
+              "reason": "DORMANT_SAVINGS"
+            },
+            {
+              "id": 21,
+              "reason": "NO_ID_BANK_ONBOARDING"
+            },
+            {
+              "id": 22,
+              "reason": "NO_LIVENESS_BANK_ONBOARDING"
+            },
+            {
+              "id": 23,
+              "reason": "NO_MIDDLE_NAME_BANK_ONBOARDING"
+            },
+            {
+              "id": 24,
+              "reason": "NO_PH_ADDRESS_BANK_ONBOARDING"
+            },
+            {
+              "id": 25,
+              "reason": "NO_EDD_BANK_ONBOARDING"
+            },
+            {
+              "id": 26,
+              "reason": "NO_RISK_RATING_BANK_ONBOARDING"
+            }
+          ],
+          "affected_statuses": [
+            {
+              "id": 9,
+              "status": "tagged"
+            },
+            {
+              "id": 10,
+              "status": "rejected"
+            }
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "action": {
+          "id": 7,
+          "code": "NO_ACTION"
+        },
+        "criteria": {
+          "id": 7,
+          "affected_reasons": [
+            {
+              "id": 17,
+              "reason": "Risk_med"
+            },
+            {
+              "id": 18,
+              "reason": "Risk_low"
+            },
+            {
+              "id": 20,
+              "reason": "DORMANT_SAVINGS"
+            },
+            {
+              "id": 27,
+              "reason": "NO_ID_BANK_ONBOARDING"
+            },
+            {
+              "id": 28,
+              "reason": "NO_LIVENESS_BANK_ONBOARDING"
+            },
+            {
+              "id": 29,
+              "reason": "NO_MIDDLE_NAME_BANK_ONBOARDING"
+            },
+            {
+              "id": 30,
+              "reason": "NO_PH_ADDRESS_BANK_ONBOARDING"
+            },
+            {
+              "id": 31,
+              "reason": "NO_EDD_BANK_ONBOARDING"
+            },
+            {
+              "id": 32,
+              "reason": "NO_RISK_RATING_BANK_ONBOARDING"
+            }
+          ],
+          "affected_statuses": [
+            {
+              "id": 11,
+              "status": "submitted"
+            }
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "action": {
+          "id": 8,
+          "code": "UI_BLOCK_FOR_SUBMISSION"
+        },
+        "criteria": {
+          "id": 8,
+          "affected_reasons": [],
+          "affected_statuses": [
+            {
+              "id": 12,
+              "status": "tagged"
+            },
+            {
+              "id": 13,
+              "status": "rejected"
+            }
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "action": {
+          "id": 9,
+          "code": "UI_BLOCK_FOR_REVIEW"
+        },
+        "criteria": {
+          "id": 9,
+          "affected_reasons": [],
+          "affected_statuses": [
+            {
+              "id": 14,
+              "status": "submitted"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "meta": {}
+}

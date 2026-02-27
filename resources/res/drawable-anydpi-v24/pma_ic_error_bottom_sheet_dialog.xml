@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="60dp"
+    android:width="60dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="@drawable/_pma_ic_error_bottom_sheet_dialog__0_res_0x7f08000b"
+        android:pathData="M59.474,59.475m-57.6,0a57.6,57.6 0,1 1,115.2 0a57.6,57.6 0,1 1,-115.2 0"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M60,120a60,60 0,1 1,60 -60,60.068 60.068,0 0,1 -60,60zM60,6a54,54 0,1 0,54 54A54.066,54.066 0,0 0,60 6z"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M75.85,44.014L75.985,44.15A3,3 0,0 1,75.985 48.392L48.391,75.986A3,3 0,0 1,44.149 75.986L44.014,75.851A3,3 118.404,0 1,44.014 71.608L71.607,44.014A3,3 0,0 1,75.85 44.014z"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M48.214,43.838L76.161,71.785A2.75,2.75 128.495,0 1,76.161 75.674L75.672,76.163A2.75,2.75 0,0 1,71.783 76.163L43.836,48.216A2.75,2.75 128.33,0 1,43.836 44.327L44.325,43.838A2.75,2.75 0,0 1,48.214 43.838z"/>
+</vector>

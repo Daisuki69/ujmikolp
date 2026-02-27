@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xp_meter_constraint_layout"
+    android:background="@drawable/maya_xp_card_bg"
+    android:paddingBottom="@dimen/maya_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.paymaya.mayaui.xp.view.widgets.MayaXpMeterView
+        android:id="@+id/xp_meter_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_widget_height_145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:meterBackgroundColor="@color/transparent"
+        app:meterCurrentValue="200"
+        app:meterMaxValue="1100"
+        app:meterMinValue="80"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/xp_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/maya_margin_extra_normal"
+        android:layout_marginTop="@dimen/maya_margin_14"
+        android:layout_marginRight="@dimen/maya_margin_extra_normal"
+        android:text="@string/maya_xp_mec_description"
+        android:layout_marginHorizontal="@dimen/maya_margin_extra_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xp_meter_view"
+        style="@style/CerebriBookLongRead.Secondary80"/>
+    <Button
+        android:id="@+id/earn_more_xp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/maya_margin_extra_normal"
+        android:layout_marginTop="@dimen/maya_margin_large"
+        android:layout_marginRight="@dimen/maya_margin_extra_normal"
+        android:text="@string/maya_xp_earn_more"
+        android:layout_marginHorizontal="@dimen/maya_margin_extra_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xp_description_text_view"
+        style="@style/MayaButtonMediumSubline.Cerebri"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

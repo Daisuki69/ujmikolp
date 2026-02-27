@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/maya_radius_32dp"/>
+            <solid android:color="@color/maya_shades_of_grey_2"/>
+        </shape>
+    </item>
+</selector>

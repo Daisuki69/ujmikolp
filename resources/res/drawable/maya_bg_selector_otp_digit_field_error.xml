@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/pma_radius_16dp"/>
+            <solid android:color="?attr/mayaColorInputLayoutBackgroundFillErrorFocused"/>
+            <stroke
+                android:width="@dimen/pma_stroke_width_normal"
+                android:color="?attr/mayaColorInputLayoutBackgroundStrokeErrorFocused"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/pma_radius_16dp"/>
+            <solid android:color="?attr/mayaColorInputLayoutBackgroundFillErrorDefault"/>
+            <stroke
+                android:width="@dimen/pma_stroke_width_normal"
+                android:color="?attr/mayaColorInputLayoutBackgroundStrokeErrorDefault"/>
+        </shape>
+    </item>
+</selector>

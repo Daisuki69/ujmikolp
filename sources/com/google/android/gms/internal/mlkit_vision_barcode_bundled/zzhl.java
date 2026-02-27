@@ -1,0 +1,12 @@
+package com.google.android.gms.internal.mlkit_vision_barcode_bundled;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzhl extends zzeb implements zzfn {
+    private zzhl() {
+        throw null;
+    }
+
+    public /* synthetic */ zzhl(zzhi zzhiVar) {
+        super(zzhm.zzb);
+    }
+}

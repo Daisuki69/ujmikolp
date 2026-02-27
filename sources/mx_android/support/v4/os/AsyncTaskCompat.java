@@ -1,0 +1,19 @@
+package mx_android.support.v4.os;
+
+import android.os.AsyncTask;
+import android.os.Build;
+
+/* JADX INFO: loaded from: classes7.dex */
+public class AsyncTaskCompat {
+    public static <Params, Progress, Result> AsyncTask<Params, Progress, Result> executeParallel(AsyncTask<Params, Progress, Result> asyncTask, Params... paramsArr) {
+        if (asyncTask == null) {
+            throw new IllegalArgumentException("task can not be null");
+        }
+        if (Build.VERSION.SDK_INT >= 11) {
+            AsyncTaskCompatHoneycomb.executeParallel(asyncTask, paramsArr);
+        } else {
+            asyncTask.execute(paramsArr);
+        }
+        return asyncTask;
+    }
+}

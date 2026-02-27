@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_view_info_icon"
+        android:background="@drawable/maya_bg_cultured_white_corner_radius_16"
+        android:padding="@dimen/maya_padding_14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/maya_kyc_complete_personal_information_image_height"
+        android:layout_margin="@dimen/maya_margin_6"
+        android:src="0x7f080302"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="@color/maya_shades_of_grey_5"
+        android:id="@+id/text_view_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_small"
+        android:text="Wallet"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_info_icon"
+        style="@style/JekoBoldSmallText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

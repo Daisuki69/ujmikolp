@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="maya_format_bank_pull_linked_option_with_count">
+        <item quantity="one">%d account</item>
+        <item quantity="other">%d accounts</item>
+    </plurals>
+    <plurals name="maya_format_minimum_n_maximum_n_max_transactions">
+        <item quantity="one">From %1$s up to %2$s per transaction only. Cash in up to %3$d time per day.</item>
+        <item quantity="other">From %1$s up to %2$s per transaction only. Cash in up to %3$d times per day.</item>
+    </plurals>
+    <plurals name="maya_format_resend_code_countdown">
+        <item quantity="one">Resend Code in %d second</item>
+        <item quantity="other">Resend Code in %d seconds</item>
+    </plurals>
+    <plurals name="maya_label_format_account_limit_count">
+        <item quantity="one">%d transaction left (max: %d)</item>
+        <item quantity="other">%d transactions left (max: %d)</item>
+    </plurals>
+    <plurals name="maya_label_format_missions_task_item_steps_accomplished_count_target_empty">
+        <item quantity="one">Your progress: %d time</item>
+        <item quantity="other">Your progress: %d times</item>
+    </plurals>
+    <plurals name="maya_label_format_missions_task_item_steps_accomplished_count_target_non_empty">
+        <item quantity="one">%d out of %d time</item>
+        <item quantity="other">%d out of %d times</item>
+    </plurals>
+    <plurals name="maya_label_missions_format_mission_tasks_completed">
+        <item quantity="one">%s of %s task completed</item>
+        <item quantity="other">%s of %s tasks completed</item>
+    </plurals>
+    <plurals name="maya_label_pay_bills_reminder">
+        <item quantity="one">Reminder</item>
+        <item quantity="other">Reminders</item>
+    </plurals>
+    <plurals name="maya_mfa_format_resend_code_countdown">
+        <item quantity="one">Resend OTP in %d second</item>
+        <item quantity="other">Resend OTP in %d seconds</item>
+    </plurals>
+    <plurals name="maya_notification_message_chat_support">
+        <item quantity="one">unread message</item>
+        <item quantity="other">unread messages</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="pma_label_format_account_limit_count">
+        <item quantity="one">%d transaction left (max: %d)</item>
+        <item quantity="other">%d transactions left (max: %d)</item>
+    </plurals>
+    <plurals name="pma_label_format_virtual_card_expire">
+        <item quantity="one">Your virtual card will expire in %d day</item>
+        <item quantity="other">Your virtual card will expire in %d days</item>
+    </plurals>
+    <plurals name="pma_label_message_limit">
+        <item quantity="one">%s character remaining</item>
+        <item quantity="other">%s characters remaining</item>
+    </plurals>
+    <plurals name="pma_label_minimum_n_maximum_n_max_transactions">
+        <item quantity="one">From %1$s up to %2$s per transaction only. Cash in up to %3$d time per day.</item>
+        <item quantity="other">From %1$s up to %2$s per transaction only. Cash in up to %3$d times per day.</item>
+    </plurals>
+    <plurals name="pma_label_resend_code_countdown">
+        <item quantity="one">Resend Code in %d second…</item>
+        <item quantity="other">Resend Code in %d seconds…</item>
+    </plurals>
+    <plurals name="pma_label_resend_code_countdown_html">
+        <item quantity="one">&lt;b&gt;Resend Code&lt;/b&gt; in %d second</item>
+        <item quantity="other">&lt;b&gt;Resend Code&lt;/b&gt; in %d seconds</item>
+    </plurals>
+</resources>

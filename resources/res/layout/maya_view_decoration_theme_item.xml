@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_design_container"
+    android:layout_width="@dimen/maya_decoration_theme_item_design_card_length"
+    android:layout_height="@dimen/maya_decoration_theme_item_design_card_length"
+    app:cardCornerRadius="@dimen/maya_radius_8dp"
+    app:cardElevation="@dimen/maya_elevation_flat">
+    <ImageView
+        android:id="@+id/image_view_theme_design_icon"
+        android:background="?attr/mayaContentViewBackgroundColorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="@+id/view_design_selected_border"
+        android:background="@drawable/maya_bg_transparent_card_border_primary"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.cardview.widget.CardView>

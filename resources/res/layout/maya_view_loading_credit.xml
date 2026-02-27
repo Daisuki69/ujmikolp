@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/pma_margin_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/lottie_animation_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_credit_shimmer_height_header"
+        android:layout_marginTop="@dimen/pma_margin_28dp"
+        layout="@layout/maya_view_shimmer_rounded"/>
+    <include
+        android:id="@+id/lottie_animation_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_credit_shimmer_height_help"
+        android:layout_marginTop="@dimen/pma_margin_normal"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_animation_header"
+        layout="@layout/maya_view_shimmer_rounded"/>
+    <include
+        android:id="@+id/lottie_animation_logo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/maya_credit_shimmer_height_logo"
+        android:layout_marginTop="@dimen/pma_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_animation_help"
+        app:layout_constraintWidth_percent="0.48"
+        layout="@layout/maya_view_shimmer_rounded"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

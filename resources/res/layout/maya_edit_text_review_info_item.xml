@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paymaya.mayaui.common.view.widget.inforeviewlist.item.MayaEditTextReviewInfoItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maya_edit_text_review_info_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

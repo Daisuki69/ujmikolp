@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f080505"
+        android:id="@+id/pma_menu_edd_search_field"
+        android:title="@string/pma_menu_search"
+        app:actionLayout="@layout/pma_view_edd_search_view"
+        app:iconTint="@color/primary"
+        app:showAsAction="collapseActionView|ifRoom"/>
+</menu>

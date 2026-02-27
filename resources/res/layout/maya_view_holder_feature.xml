@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/feature_tag_text_view"
+        android:paddingLeft="@dimen/maya_padding_small"
+        android:paddingTop="@dimen/maya_padding_extra_small"
+        android:paddingRight="@dimen/maya_padding_small"
+        android:paddingBottom="@dimen/maya_padding_extra_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/maya_margin_extra_small"
+        android:elevation="@dimen/pma_elevation_high"
+        android:paddingHorizontal="@dimen/maya_padding_small"
+        android:paddingVertical="@dimen/maya_padding_extra_small"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/JekoRegularOverlineSmall.Secondary"/>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/image_button_secondary_feature_icon"
+        android:background="@drawable/maya_bg_selector_image_button_grey"
+        android:layout_width="@dimen/maya_secondary_feature_size"
+        android:layout_height="@dimen/maya_secondary_feature_size"
+        android:layout_marginTop="@dimen/pma_margin_2x_small"
+        android:scaleType="center"
+        android:layout_marginStart="@dimen/pma_margin_extra_small"
+        android:layout_marginEnd="@dimen/pma_margin_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/feature_tag_text_view"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_view_secondary_feature_name"
+        android:paddingLeft="@dimen/maya_padding_2x_small"
+        android:paddingRight="@dimen/maya_padding_2x_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/maya_padding_2x_small"
+        app:layout_constraintLeft_toLeftOf="@+id/image_button_secondary_feature_icon"
+        app:layout_constraintRight_toRightOf="@+id/image_button_secondary_feature_icon"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_secondary_feature_icon"
+        style="@style/JekoBoldSmallText.Tertiary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

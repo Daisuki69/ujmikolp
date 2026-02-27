@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_constraint_layout_pma_dialog_fragment_ekyc_id_detail"
+    android:background="@color/pma_background_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back_image_view_pma_dialog_fragment_ekyc_id_detail"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="@dimen/pma_padding_normal"
+        android:layout_width="@dimen/pma_back_button_size"
+        android:layout_height="@dimen/pma_back_button_size"
+        android:src="@drawable/pma_ic_back_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/id_preview_image_view_pma_dialog_fragment_ekyc_id_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/pma_margin_extra_large"
+        android:scaleType="fitCenter"
+        android:minHeight="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_image_view_pma_dialog_fragment_ekyc_id_detail"
+        app:layout_constraintVertical_bias="0.4"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

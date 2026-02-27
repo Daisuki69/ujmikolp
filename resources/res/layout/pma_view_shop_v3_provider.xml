@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_card_view_pma_shop_view_v3_provider"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pma_shop_provider_main_card_height"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/provider_icon_image_view_pma_shop_view_v3_provider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/pma_margin_normal"
+            android:src="0x7f08050e"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/divider_view_pma_shop_view_v3_provider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <View
+            android:id="@+id/divider_view_pma_shop_view_v3_provider"
+            android:background="@color/off_light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pma_elevation_1dp"
+            android:layout_marginTop="@dimen/pma_margin_small"
+            android:layout_marginBottom="@dimen/pma_margin_normal"
+            app:layout_constraintBottom_toTopOf="@+id/provider_text_view_pma_shop_view_v3_provider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/provider_text_view_pma_shop_view_v3_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pma_margin_medium"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Body2Dark"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

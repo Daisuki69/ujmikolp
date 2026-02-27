@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_pma_fragment_shop_v3_provider_products_list"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="3"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/banner_loading_lottie_view_pma_fragment_shop_v3_provider_products_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list"
+        app:layout_constraintLeft_toLeftOf="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list"
+        app:layout_constraintRight_toRightOf="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list"
+        app:layout_constraintTop_toTopOf="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pma_loading_shimmer"
+        app:lottie_scale="1"
+        app:srcCompat="@drawable/pma_background_shimmer_paymaya_placeholder"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/container_swipe_refresh_layout_pma_fragment_shop_v3_provider_products_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provider_banner_image_view_pma_fragment_shop_v3_provider_products_list">
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbarSize="@dimen/pma_scrollbar_size_normal"
+            android:scrollbarThumbVertical="@color/pma_theme_home_scrollbar_color"
+            android:id="@+id/products_recycler_view_pma_fragment_shop_v3_provider_products_list"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

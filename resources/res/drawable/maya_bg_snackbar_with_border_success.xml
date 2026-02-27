@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/maya_margin_small"
+        android:right="@dimen/maya_margin_small">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/misty_lawn"/>
+            <corners android:radius="16dp"/>
+            <stroke
+                android:width="@dimen/maya_stroke_width_small"
+                android:color="@color/grown_green"/>
+        </shape>
+    </item>
+</layer-list>

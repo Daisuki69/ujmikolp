@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:state_checked="true"
+                android:left="@dimen/maya_switch_thumb_inset_horizontal"
+                android:top="@dimen/maya_switch_thumb_inset_vertical"
+                android:right="@dimen/maya_switch_thumb_inset_horizontal"
+                android:bottom="@dimen/maya_switch_thumb_inset_vertical">
+                <shape
+                    android:dither="true"
+                    android:visible="true"
+                    android:shape="rectangle"
+                    android:useLevel="false">
+                    <solid android:color="?attr/mayaColorSwitchThumbChecked"/>
+                    <corners android:radius="@dimen/maya_radius_25dp"/>
+                    <size
+                        android:height="@dimen/maya_switch_thumb_height"
+                        android:width="@dimen/maya_switch_thumb_width"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <layer-list>
+            <item
+                android:state_checked="true"
+                android:left="@dimen/maya_switch_thumb_inset_horizontal"
+                android:top="@dimen/maya_switch_thumb_inset_vertical"
+                android:right="@dimen/maya_switch_thumb_inset_horizontal"
+                android:bottom="@dimen/maya_switch_thumb_inset_vertical">
+                <shape
+                    android:dither="true"
+                    android:visible="true"
+                    android:shape="rectangle"
+                    android:useLevel="false">
+                    <solid android:color="?attr/mayaColorSwitchThumbDefault"/>
+                    <corners android:radius="@dimen/maya_radius_25dp"/>
+                    <size
+                        android:height="@dimen/maya_switch_thumb_height"
+                        android:width="@dimen/maya_switch_thumb_width"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

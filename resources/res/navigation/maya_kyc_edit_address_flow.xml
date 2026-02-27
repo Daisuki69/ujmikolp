@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maya_kyc_edit_address_flow"
+    app:startDestination="@+id/maya_kyc_edit_address_fragment">
+    <fragment
+        android:label="@string/maya_kyc_edit_address_screen_label"
+        android:name="com.paymaya.mayaui.kyczoloz.view.fragment.impl.MayaKycEditAddressFragment"
+        android:id="@+id/maya_kyc_edit_address_fragment">
+        <action
+            android:id="@+id/action_maya_kyc_edit_address_fragment_to_maya_kyc_purpose_of_account_flow"
+            app:destination="@+id/maya_kyc_purpose_of_account_flow"/>
+        <action
+            android:id="@+id/action_maya_kyc_edit_address_fragment_to_maya_kyc_single_selection_bottom_sheet_dialog_fragment"
+            app:destination="@+id/maya_kyc_single_selection_bottom_sheet_dialog_fragment"/>
+        <action
+            android:id="@+id/action_maya_kyc_edit_address_fragment_to_maya_kyc_error_dialog_fragment"
+            app:destination="@+id/maya_kyc_error_dialog_fragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,45 @@
+{
+    "questions":[
+        {
+            "question":"What is your estimated net worth?",
+            "answers":[
+                {
+                    "answer":"Less than ₱1 million"
+                },
+                {
+                    "answer":"Around ₱1-10 million"
+                },
+                {
+                    "answer":"Around ₱10-20 million"
+                },
+                {
+                    "answer":"Above ₱20 million"
+                }
+            ]
+        },
+        {
+            "question":"What are your sources of income?",
+            "answers":[
+                {
+                    "answer":"Income",
+                    "subtitle":"(e.g. dividends, salary, business income)"
+                },
+                {
+                    "answer":"Savings/Investments"
+                },
+                {
+                    "answer":"Remittance/Allowances"
+                },
+                {
+                    "answer":"Pension"
+                },
+                {
+                    "answer":"Inheritance"
+                },
+                {
+                    "answer":"Others"
+                }
+            ]
+        }
+    ]
+}

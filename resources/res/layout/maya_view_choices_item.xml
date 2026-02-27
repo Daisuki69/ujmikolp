@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_choices_container"
+    android:background="@drawable/maya_bg_content_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/maya_margin_6"
+    android:layout_marginBottom="@dimen/maya_margin_6">
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/text_view_choices_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_extra_normal"
+        android:layout_marginBottom="@dimen/maya_margin_extra_normal"
+        android:layout_marginStart="@dimen/maya_margin_normal"
+        android:layout_marginEnd="@dimen/maya_margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_selected_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="@dimen/maya_margin_normal"
+        style="@style/JekoSemiBoldTextBody.Primary"/>
+    <ImageView
+        android:id="@+id/image_view_selected_item"
+        android:visibility="gone"
+        android:layout_width="@dimen/maya_icon_size_length_default"
+        android:layout_height="@dimen/maya_icon_size_length_default"
+        android:src="@drawable/maya_ic_check_green"
+        android:layout_marginEnd="@dimen/maya_margin_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_choices_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_view_choices_item"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

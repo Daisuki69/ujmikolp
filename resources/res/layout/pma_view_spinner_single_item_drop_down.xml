@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dOYHB6.lN8Dz0.d8NVX3 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/pma_view_spinner_single_item_drop_down_linear_layout"
+    android:paddingLeft="@dimen/pma_padding_normal"
+    android:paddingTop="@dimen/pma_padding_small"
+    android:paddingRight="@dimen/pma_padding_normal"
+    android:paddingBottom="@dimen/pma_padding_small"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pma_view_spinner_single_item_drop_down_text_view_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</dOYHB6.lN8Dz0.d8NVX3>

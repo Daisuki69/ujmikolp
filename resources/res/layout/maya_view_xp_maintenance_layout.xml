@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xp_maintenance_constraint_layout"
+    android:background="@drawable/maya_xp_card_loading_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/maya_widget_height_290dp">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.32"/>
+    <TextView
+        android:textSize="@dimen/maya_text_size_h5"
+        android:id="@+id/xp_maintenance_emoji_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maya_warning_emoji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top"/>
+    <TextView
+        android:id="@+id/xp_maintenance_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_6"
+        android:text="@string/maya_label_that_didnt_load_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xp_maintenance_emoji_text_view"
+        style="@style/CerebriMediumLongRead.Primary"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/xp_maintenance_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/maya_xp_maintenance_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xp_maintenance_title_text_view"
+        style="@style/CerebriBookSmallText.Secondary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

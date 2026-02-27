@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maya_background_card_white"
+    android:paddingBottom="@dimen/maya_padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/maya_padding_8dp">
+    <ImageView
+        android:id="@+id/image_view_step"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/maya_kyc_complete_your_maya_experience_step_image_size"
+        android:src="0x7f080302"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/text_view_step_number"
+        android:background="@drawable/maya_bg_content_information_oval_primary_green"
+        android:padding="@dimen/maya_margin_2x_small"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/maya_kyc_complete_your_maya_experience_step_image_size_offset"
+        android:text="@string/maya_kyc_complete_your_maya_experience_first_step_icon_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_step"
+        style="@style/CerebriBookSmallText.Accent"/>
+    <com.paymaya.common.widget.HtmlTextView
+        android:textColor="@color/black"
+        android:textColorLink="@color/pma_primary_100_base"
+        android:id="@+id/text_view_step_instruction"
+        android:clickable="false"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_8"
+        android:text="@string/maya_kyc_complete_your_maya_experience_instruction"
+        android:maxLines="4"
+        android:layout_marginEnd="@dimen/maya_margin_10"
+        app:htmlUnderline="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_view_step_number"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_step_number"
+        style="@style/CerebriBookLink.Secondary200"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paymaya.mayaui.dashboard.view.widget.MayaServicesCoreItemsView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_core_items"
+    android:background="?attr/mayaColorBackgroundPrimary"
+    android:paddingLeft="@dimen/maya_padding_large"
+    android:paddingTop="@dimen/maya_padding_14dp"
+    android:paddingRight="@dimen/maya_padding_large"
+    android:paddingBottom="@dimen/maya_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/maya_margin_large"
+    android:paddingHorizontal="@dimen/maya_padding_large"/>

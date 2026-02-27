@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/pma_button_blue_background_default_secondary"
+        android:state_activated="true"/>
+</selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/maya_padding_large"
+    android:paddingRight="@dimen/maya_padding_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/maya_padding_large">
+    <include
+        android:id="@+id/layout_list_loading"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maya_push_approval_match_constraint"
+        app:layout_constraintBottom_toTopOf="@+id/button_bottom_refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/maya_layout_push_approval_list_loading"/>
+    <include
+        android:id="@+id/layout_list_content"
+        android:visibility="gone"
+        android:layout_width="@dimen/maya_push_approval_match_constraint"
+        android:layout_height="@dimen/maya_push_approval_match_constraint"
+        app:layout_constraintBottom_toTopOf="@+id/button_bottom_refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/maya_layout_push_approval_list_content"/>
+    <Button
+        android:id="@+id/button_bottom_refresh"
+        android:layout_width="@dimen/maya_push_approval_match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_margin_extra_large"
+        android:layout_marginBottom="@dimen/maya_margin_extra_large"
+        android:text="@string/maya_push_approval_list_bottom_button_text"
+        android:layout_marginVertical="@dimen/maya_margin_extra_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/MayaButtonPrimaryLarge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

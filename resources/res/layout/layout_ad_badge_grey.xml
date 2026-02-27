@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/adkit_text_size_10sp"
+    android:textStyle="normal"
+    android:textColor="@android:color/white"
+    android:gravity="center"
+    android:id="@+id/ad_badge_textview"
+    android:background="@drawable/bg_ad_badge_grey"
+    android:paddingTop="@dimen/adkit_spacing_1dp"
+    android:paddingBottom="@dimen/adkit_spacing_1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ad"
+    android:paddingStart="@dimen/adkit_spacing_6dp"
+    android:paddingEnd="@dimen/adkit_spacing_6dp"/>

@@ -1,0 +1,5 @@
+package io.split.android.client.storage.splits;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface a {
+}

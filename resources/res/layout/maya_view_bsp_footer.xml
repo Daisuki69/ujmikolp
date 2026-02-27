@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/maya_padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_view_maya_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/mayaDrawable_CommonGraphicLogoFull"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.paymaya.common.widget.HtmlTextView
+        android:id="@+id/html_text_view_bsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maya_padding_small"
+        android:text="@string/maya_label_bsp_footer_with_hotline_message"
+        android:textAlignment="center"
+        android:lineHeight="@dimen/maya_line_height_18sp"
+        app:htmlUnderline="false"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_maya_logo"
+        style="@style/CerebriBookSmallText.Secondary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

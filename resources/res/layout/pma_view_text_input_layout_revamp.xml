@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/revamp_edit_text_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Heading04StandardGray200"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/revamp_edit_text"
+        android:paddingTop="@dimen/pma_padding_0dp"
+        android:paddingBottom="@dimen/pma_padding_extra_small"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        android:singleLine="false"
+        android:imeOptions="actionNext"
+        android:paddingStart="@dimen/pma_padding_0dp"
+        android:paddingEnd="@dimen/pma_padding_0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revamp_edit_text_label"
+        style="@style/BodyXLargeStandardGray160"/>
+    <TextView
+        android:id="@+id/revamp_edit_text_helper"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pma_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revamp_edit_text"
+        style="@style/BodySmallStandard"/>
+</merge>

@@ -1,0 +1,37 @@
+{
+    "time_based": [
+      {
+      "id": "56e52892-d8cf-4a37-930f-7da73519ab5f",
+      "start_date": "2022-06-30",
+      "hour_of_day": 1,
+      "frequency": "MONTHLY",
+      "day_of_month": 1,
+      "amount": {
+        "currency": "PHP",
+        "value": 100.0
+      },
+      "account": "066798475226",
+      "payment_token": "b46b2543-fb4c-48d4-82b2-fb71e5485e32",
+      "payment_option": "REGULAR_SAVINGS_CONSUMER_DEPOSIT",
+      "created_date": "2022-06-29T13:15:28.939874Z",
+      "updated_date": "2022-06-29T13:15:28.939874Z",
+      "enabled": false
+      }
+    ],
+    "amount_based": {
+      "enabled": true,
+      "id": "ca266456-e5f2-490c-ac67-09e6cfdb3a63",
+      "minimum_amount": {
+        "currency": "PHP",
+        "value": 1.00
+      },
+      "amount": {
+        "currency": "PHP",
+        "value": 1000.00
+      },
+      "payment_token": "540c780c-9f3e-4371-8133-653317bafef7",
+      "payment_option": "REGULAR_SAVINGS_CONSUMER_DEPOSIT",
+      "created_date": "2022-08-16T05:29:08.607159Z",
+      "updated_date": "2022-08-16T07:26:35.699189Z"
+      }
+}

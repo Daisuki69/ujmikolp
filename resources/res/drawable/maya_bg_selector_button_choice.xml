@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/tropic_green_8_alpha">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <layer-list>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/pma_radius_120dp"/>
+                            <solid android:color="@color/tropic_green_8_alpha"/>
+                            <stroke
+                                android:width="@dimen/maya_stroke_width_normal"
+                                android:color="@color/tropic_green"/>
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+            <item android:state_selected="false">
+                <layer-list>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/pma_radius_120dp"/>
+                            <solid android:color="@color/bright_gray"/>
+                            <stroke
+                                android:width="@dimen/maya_stroke_width_normal"
+                                android:color="@color/black"/>
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+        </selector>
+    </item>
+</ripple>
